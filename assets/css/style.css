@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body {
     background: #f3f8ff;
     min-height: 100vh; 
-    margin: 0
+    margin: 0;
 }
 
 .bg-logo-img {
@@ -90,6 +91,7 @@ span {
     letter-spacing: 0.02em;
     text-align: left;
     color: #8a8a8a;
+    font-family: "Inter", sans-serif;
 
 }
 
@@ -176,6 +178,7 @@ padding-top: 5px;
     font-weight: bolder;
     font-size: 43px;
     width: 50%;
+     font-family: "Outfit", sans-serif !important;
 }
 .text-span{
 color: white;
@@ -185,6 +188,7 @@ color: white;
     font-size: 25px;
     padding: 10px;
     width: 50%;
+     font-family: "Outfit", sans-serif !important;
 }
 .btn-view{
     margin-top: 20px;
@@ -198,27 +202,32 @@ color: white;
     background: #000;
     color: #fff;
 }
+.how-we-work{
+    background: #edf4fc;
+}
 .work{
     padding-top: 50px;
-    background: #eff7ef;
 }
 .work-title{
     text-align: center;
     font-size: 17px;
     text-transform: uppercase;
     color: #359cfe;
+    font-family: "Outfit", sans-serif !important;
 }
 .right-work{
     color: #222222;
     font-size: 25px;
     padding: 10px;
     width: 50%;
+     font-family: "Outfit", sans-serif !important;
 }
 .left-work{
     color: #359cfe;
     font-weight: bold;
     font-size: 45px;
     width: 50%;
+     font-family: "Outfit", sans-serif !important;
 }
 .btn-pricing{
     background: #359cfe;
@@ -230,6 +239,248 @@ border-radius: 10px;
 .btn-pricing:hover{
     background: #000;
     color: #fff;
+}
+.how-we-work{
+    position: relative;
+}
+.work-bg-1{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.work-bg-2{
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.pharmacy-record{
+    background: #ddeeff;
+    padding: 40px 0;
+}
+.left-pharmacy-content{
+    width: 60%;
+    padding: 0 20px;
+}
+.left-pharmacy-content p, .benefits-details p, .benefit-rev-details p{
+    font-size: 17px;
+    color:#0585FF;
+}
+.left-pharmacy-content h2, .benefits-details h2, .benefit-rev-details h2{
+    font-size: 45px;
+    color:#0585FF;
+}
+.right-pharmacy-content{
+    width: 40%;
+}
+.circle{
+    background: white;
+    border-radius: 50%;
+    height: 30px;
+    width:30px;
+}
+.record{
+    position: relative;
+}
+.pharmacy-capsule{
+    position: absolute;
+    top:-20%;
+    left:0;
+    width: 144px;
+    height: 144px;
+}
+.benefits{
+    background: #edf4fc;
+    padding: 50px 0;
+    position: relative;
+}
+.left-benefit-content{
+    width: 40%;
+    background-image: url(../img/cap-2.png);
+    background-repeat: no-repeat;
+    background-position: -4% 15%;
+}
+.right-benefit-content{
+    width: 60%;
+    text-align: right;
+}
+.benefits-details{
+    width: 90%;
+}
+.benefit-bg-1{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.benefit-bg-2{
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.benefits-rev{
+    background: #ddeeff;
+    padding: 50px 0;
+    position: relative;
+}
+.left-rev-benefit-content{
+    width: 60%;
+    text-align: right;
+}
+.benefit-rev-details{
+    width: 90%;
+}
+.right-rev-benefit-content{
+    width: 40%;
+    background-image: url(../img/capsule.png);
+    background-repeat: no-repeat;
+    background-position: 104% 15%;
+}
+.benefit-rev-bg-1{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.benefit-rev-bg-2{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.faq-heading{
+    color:#0585FF;
+    font-size: 40px;
+    text-align: center;
+    background: #ddeeff;
+    padding: 20px 0;
+}
+.subscription{
+    background-image: url(../img/subs.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   padding: 10% 15%;
+}
+.all-card{
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.plan-card {
+    border-radius: 10px;
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.plan-card .price {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.plan-card .plan-title {
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.plan-card ul {
+    margin-top: 20px;
+}
+
+.plan-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dot.check {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.choose-btn {
+    margin-top: 20px;
+    background-color: #66B2FF;
+    border-color: #66B2FF;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.business-plan {
+    background-color: #2192fe;
+    border: 2px solid #007bff;
+    margin-top: -15%;
+    padding-top: 21%;
+}
+
+.most-popular {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    background-color: white;
+    color:  #007bff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.footer{
+    background: #ddeeff;
+}
+.menus{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "outfit", sens-serif;
+}
+.menus div ul li{
+    list-style: none;
+}
+.list-heading{
+    color:#3c3c3c !important;
+    font-weight: 800;
+}
+.footer-list li{
+    color: #007bff;
+    padding-bottom: 10px;
+}
+.copy-rights p{
+    font-weight: 700;
+    color: #007bff;
+    padding-bottom: 50px;
+}
+.latest-update{
+    font-weight: 700;
+    color: #007bff;
+    padding-bottom: 50px;
 }
 @media (max-width: 991px) {
     .bg-hero-image {
@@ -308,6 +559,59 @@ border-radius: 10px;
         color: #8a8a8a;
     
     }
+    .left-benefit-content{
+        width: 100%;
+    }
+    .right-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefits-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .benefit-bg-2{
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .left-rev-benefit-content{
+        width: 100%;
+    }
+    .right-rev-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefit-rev-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .subscription {
+        background: none;
+    }
+
+    .plan-card .price {
+        font-size: 22px;
+    }
+
+    .plan-card .plan-title {
+        font-size: 28px;
+    }
+
+    .business-plan {
+        margin-top: -5%;
+        padding-top: 15%;
+    }
+
+    .choose-btn {
+        padding: 8px 20px;
+    }
 }
 
 /* Phone devices (576px and larger) */
@@ -379,7 +683,7 @@ border-radius: 10px;
     span {
         font-family: "Inter", sans-serif;
         font-weight: 700;
-        font-size: 30px; 
+        font-size: 15px; 
         line-height: 31px; 
     }
 
@@ -405,10 +709,61 @@ border-radius: 10px;
     .right-content, .right-work{
         font-size: 18px;
     }
+    .left-pharmacy-content{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    .right-pharmacy-content{
+        width: 100%;
+        margin-top:30px;
+    }
+    .view-btn{
+        margin: auto;
+    }
+    .pharmacy-capsule{
+        position: absolute;
+        top:-7%;
+        left:0;
+        width: 90px;
+        height: 90px;
+    }
+    .left-benefit-content{
+        width: 100%;
+    }
+    .right-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefits-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .benefit-bg-2{
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .left-rev-benefit-content{
+        width: 100%;
+    }
+    .right-rev-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefit-rev-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
 }
 
 /* Very small devices (576px and below) */
-@media (max-width < 575px) {
+@media (max-width : 575px) {
     .bg-hero-image {
         height: 200px; 
         background-size: contain; 
@@ -468,5 +823,21 @@ border-radius: 10px;
         height: 50px; 
         top: 67%; 
         right: 20%; 
+    }
+    .benefit-bg-1{
+        position: absolute;
+        top: -2%;
+        right: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .benefit-rev-bg-1{
+        position: absolute;
+        top: -1%;
+        left: 0%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
     }
 }

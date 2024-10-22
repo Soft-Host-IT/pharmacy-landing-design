@@ -103,8 +103,8 @@ span {
     position: absolute;
     width: 151px;
     height: 203px;
-    top: -1%;
-    left: 53%;
+    top: 0%;
+    left: 55%;
     gap: 0px;
     opacity: 1;
      transition: all 0.3s ease;
@@ -375,8 +375,13 @@ border-radius: 10px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 100vh;
-   padding: 10% 15%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscription-panel{
+   width: 80%;
 }
 .all-card{
     padding: 20px 10px;
@@ -470,7 +475,7 @@ border-radius: 10px;
 }
 .footer-list li{
     color: #007bff;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .copy-rights p{
     font-weight: 700;
@@ -480,7 +485,20 @@ border-radius: 10px;
 .latest-update{
     font-weight: 700;
     color: #007bff;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+}
+.email-custom{
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+.email-custom::placeholder{
+    color: white;
+}
+.email-custom:focus{
+    outline: #007bff;
 }
 @media (max-width: 991px) {
     .bg-hero-image {
@@ -593,7 +611,8 @@ border-radius: 10px;
     }
 
     .subscription {
-        background: none;
+        background-attachment: scroll;
+        padding: 50px 0
     }
 
     .plan-card .price {
@@ -616,6 +635,9 @@ border-radius: 10px;
 
 /* Phone devices (576px and larger) */
 @media (max-width: 767px) {
+    .heading-size{
+        font-size: 42px;
+    }
     .bg-hero-image {
         height: 250px; 
         background-size: contain; 
@@ -679,21 +701,24 @@ border-radius: 10px;
 
     .hero-section {
         margin-top: 20px; 
+        text-align: center;
     }
     span {
         font-family: "Inter", sans-serif;
         font-weight: 700;
-        font-size: 15px; 
+        font-size: 20px; 
         line-height: 31px; 
     }
 
     .hero-para {
-        font-size: 16px; 
+        font-size: 18px; 
         font-weight: 400;
         line-height: 28px; 
         letter-spacing: 0.02em;
         text-align: left;
         color: #8a8a8a;
+        text-align: center;
+        margin-top: 10px;
     }
     .content, .work-content{
         flex-direction: column;
@@ -760,10 +785,28 @@ border-radius: 10px;
         text-align: center;
         margin: auto;
     }
+    .benefit-rev-bg-2 {
+        position: absolute;
+        top: 90%;
+        left: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .plan-card {
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+    .business-plan {
+        margin-top: 0; 
+        padding-top: 10%; 
+    }
 }
 
 /* Very small devices (576px and below) */
 @media (max-width : 575px) {
+    .heading-size{
+        font-size: 40px;
+    }
     .bg-hero-image {
         height: 200px; 
         background-size: contain; 
@@ -839,5 +882,19 @@ border-radius: 10px;
         width: 78px;
         height: 78px;
         transition: all 0.3s ease;
+    }
+    .menus{
+        flex-direction: column;
+        padding: 0 10px;
+        padding-top: 20px;
+    }
+    .copy-rights{
+        margin-top: 100px;
+    }
+    span {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 31px;
     }
 }

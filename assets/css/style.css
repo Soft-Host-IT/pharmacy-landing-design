@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background: #f3f8ff;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.bg-logo-img {
+    background-image: url(../img/rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47.51px;
+    height: 59px;
+    gap: 0px;
+
+
+}
+
+.whatsaap {
+    width: 65px;
+    height: 65px;
+    margin-bottom:-13px;
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.phone {
+    background: #fff;
+    border-radius: 46px;
+    padding: 8px;
+}
+
+.text-color {
+    color: #62b3ff !important;
+}
+
+.text-blue-color {
+    color: #5eaefd;
+}
+
+.text-gray {
+    color: #8A8A8A;
+
+}
+
+.text-light-gray {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    Size: 70px;
+    line-height: 61px
+}
+
+.bg-hero-image {
+    background-image: url(../img/Ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 535px;
+    top: 0;
+    left: 0;
+    gap: 0;
+    opacity: 1;
+    position: relative;
+}
+
+.pharmacy_cartoon {
+    width: 74%;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+
+.hero-para {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #8a8a8a;
+    font-family: "Inter", sans-serif;
+
+}
+
+.main {
+    position: relative;
+}
+
+.img-float-1 {
+    position: absolute;
+    width: 151px;
+    height: 203px;
+    top: 0%;
+    left: 55%;
+    gap: 0px;
+    opacity: 1;
+     transition: all 0.3s ease;
+
+}
+
+.img-float-2 {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    top: 38%;
+    left: 88%;
+    gap: 0px;
+    opacity: 1;
+     transition: all 0.3s ease;
+
+}
+
+.img-float-3 {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    top: 73%;
+    left: 80%;
+    gap: 0px;
+    opacity: 1;
+     transition: all 0.3s ease;
+
+}
+.img-float-4{
+    position: absolute;
+    width: 88px;
+    height: 78px;
+    top: 90%;
+     transition: all 0.3s ease;
+}
+.img-float-5{
+    position: absolute;
+    top: 0px;
+    width: 90px;
+    height: 78px;
+     transition: all 0.3s ease;
+}
+.img-float-6{
+    position: absolute;
+    top: 85%;
+    left: 55%;
+    width: 94px;
+    height: 94px;
+     transition: all 0.3s ease;
+}
+.img-float-7{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 114px;
+    height: 114px;
+     transition: all 0.3s ease;
+}
+.custom-btn{
+background: #2192FE;
+color:#0C1B42;
+border: none;
+padding-top: 5px;
+}
+.description{
+    background: #0a0f40;
+}
+.left-content{
+    color: #0585FF;
+    font-weight: bolder;
+    font-size: 43px;
+    width: 50%;
+     font-family: "Outfit", sans-serif !important;
+}
+.text-span{
+color: white;
+}
+.right-content{
+    color: #888888;
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+     font-family: "Outfit", sans-serif !important;
+}
+.btn-view{
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.btn-view:hover{
+    background: #000;
+    color: #fff;
+}
+.how-we-work{
+    background: #edf4fc;
+}
+.work{
+    padding-top: 50px;
+}
+.work-title{
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #359cfe;
+    font-family: "Outfit", sans-serif !important;
+}
+.right-work{
+    color: #222222;
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+     font-family: "Outfit", sans-serif !important;
+}
+.left-work{
+    color: #359cfe;
+    font-weight: bold;
+    font-size: 45px;
+    width: 50%;
+     font-family: "Outfit", sans-serif !important;
+}
+.btn-pricing{
+    background: #359cfe;
+color:#0a0f40;
+border-radius: 10px;
+    padding: 12px 25px;
+    font-weight: bolder;
+}
+.btn-pricing:hover{
+    background: #000;
+    color: #fff;
+}
+.how-we-work{
+    position: relative;
+}
+.work-bg-1{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.work-bg-2{
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.pharmacy-record{
+    background: #ddeeff;
+    padding: 40px 0;
+}
+.left-pharmacy-content{
+    width: 60%;
+    padding: 0 20px;
+}
+.left-pharmacy-content p, .benefits-details p, .benefit-rev-details p{
+    font-size: 17px;
+    color:#0585FF;
+}
+.left-pharmacy-content h2, .benefits-details h2, .benefit-rev-details h2{
+    font-size: 45px;
+    color:#0585FF;
+}
+.right-pharmacy-content{
+    width: 40%;
+}
+.circle{
+    background: white;
+    border-radius: 50%;
+    height: 30px;
+    width:30px;
+}
+.record{
+    position: relative;
+}
+.pharmacy-capsule{
+    position: absolute;
+    top:-20%;
+    left:0;
+    width: 144px;
+    height: 144px;
+}
+.benefits{
+    background: #edf4fc;
+    padding: 50px 0;
+    position: relative;
+}
+.left-benefit-content{
+    width: 40%;
+    background-image: url(../img/cap-2.png);
+    background-repeat: no-repeat;
+    background-position: -4% 15%;
+}
+.right-benefit-content{
+    width: 60%;
+    text-align: right;
+}
+.benefits-details{
+    width: 90%;
+}
+.benefit-bg-1{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.benefit-bg-2{
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.benefits-rev{
+    background: #ddeeff;
+    padding: 50px 0;
+    position: relative;
+}
+.left-rev-benefit-content{
+    width: 60%;
+    text-align: right;
+}
+.benefit-rev-details{
+    width: 90%;
+}
+.right-rev-benefit-content{
+    width: 40%;
+    background-image: url(../img/capsule.png);
+    background-repeat: no-repeat;
+    background-position: 104% 15%;
+}
+.benefit-rev-bg-1{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.benefit-rev-bg-2{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    width: 78px;
+    height: 78px;
+    transition: all 0.3s ease;
+}
+.faq-heading{
+    color:#0585FF;
+    font-size: 40px;
+    text-align: center;
+    background: #ddeeff;
+    padding: 20px 0;
+}
+.subscription{
+    background-image: url(../img/subs.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscription-panel{
+   width: 80%;
+}
+.all-card{
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.plan-card {
+    border-radius: 10px;
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.plan-card .price {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.plan-card .plan-title {
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.plan-card ul {
+    margin-top: 20px;
+}
+
+.plan-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dot.check {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.choose-btn {
+    margin-top: 20px;
+    background-color: #66B2FF;
+    border-color: #66B2FF;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.business-plan {
+    background-color: #2192fe;
+    border: 2px solid #007bff;
+    margin-top: -15%;
+    padding-top: 21%;
+}
+
+.most-popular {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    background-color: white;
+    color:  #007bff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.footer{
+    background: #ddeeff;
+}
+.menus{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "outfit", sens-serif;
+}
+.menus div ul li{
+    list-style: none;
+}
+.list-heading{
+    color:#3c3c3c !important;
+    font-weight: 800;
+}
+.footer-list li{
+    color: #007bff;
+    padding-bottom: 15px;
+}
+.copy-rights p{
+    font-weight: 700;
+    color: #007bff;
+    padding-bottom: 50px;
+}
+.latest-update{
+    font-weight: 700;
+    color: #007bff;
+    padding-bottom: 20px;
+}
+.email-custom{
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+.email-custom::placeholder{
+    color: white;
+}
+.email-custom:focus{
+    outline: #007bff;
+}
+@media (max-width: 991px) {
+    .bg-hero-image {
+        height: 350px; 
+        background-size: contain; 
+    }
+
+    .pharmacy_cartoon {
+        max-width: 310px; 
+        left: 10%;
+        top: 9%; 
+    }
+    .img-float-1 {
+        width: 100px; 
+        height: 140px; 
+        top: 16%; 
+        left: 60%; 
+        transform: translateX(-50%); 
+    }
+
+    .img-float-2 {
+        width: 90px; 
+        height: 70px; 
+        top: 45%; 
+        left: 85% 
+    }
+
+    .img-float-3 {
+        width: 80px; 
+        height: 80px; 
+        top: 63%; 
+        left: 75%; 
+    }
+
+    .img-float-4 {
+        width: 50px; 
+        height: 50px; 
+        top: 98%; 
+    }
+
+    .img-float-5 {
+        width: 50px; 
+        height: 50px; 
+        top: -4%; 
+    }
+
+    .img-float-6 {
+        width: 75px; 
+        height: 75px; 
+        top: 75%; 
+        left: 60%; 
+        transform: translateX(-50%); 
+    }
+
+    .img-float-7 {
+        width: 90px; 
+        height: 90px; 
+        top: 8%; 
+        right: 5%; 
+    }
+    .hero-section{
+        margin-top: 30px;
+    }
+    span {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        Size: 50px;
+        line-height: 31px
+    }
+    .hero-para {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #8a8a8a;
+    
+    }
+    .left-benefit-content{
+        width: 100%;
+    }
+    .right-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefits-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .benefit-bg-2{
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .left-rev-benefit-content{
+        width: 100%;
+    }
+    .right-rev-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefit-rev-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .subscription {
+        background-attachment: scroll;
+        padding: 50px 0
+    }
+
+    .plan-card .price {
+        font-size: 22px;
+    }
+
+    .plan-card .plan-title {
+        font-size: 28px;
+    }
+
+    .business-plan {
+        margin-top: -5%;
+        padding-top: 15%;
+    }
+
+    .choose-btn {
+        padding: 8px 20px;
+    }
+}
+
+/* Phone devices (576px and larger) */
+@media (max-width: 767px) {
+    .heading-size{
+        font-size: 42px;
+    }
+    .bg-hero-image {
+        height: 250px; 
+        background-size: contain; 
+    }
+
+    .pharmacy_cartoon {
+        max-width: 192px; 
+        left: 47%; 
+        transform: translateX(-50%); 
+        top: 4%; 
+    }
+
+    .img-float-1 {
+        width: 65px; 
+        height: 70px; 
+        top: 65%; 
+        left: 35%; 
+        transform: translateX(-50%); 
+    }
+
+    .img-float-2 {
+        width: 70px;
+        height: 50px;
+        top: 77%; 
+        left: 60%; 
+    }
+
+    .img-float-3 {
+        width: 70px; 
+        height: 70px;
+        top: 86%; 
+        left: 52%; 
+    }
+
+    .img-float-4 {
+        width: 40px; 
+        height: 40px;
+        top: 95%; 
+    }
+
+    .img-float-5 {
+        width: 40px;
+        height: 40px;
+        top: -2%; 
+    }
+
+    .img-float-6 {
+        width: 60px; 
+        height: 60px;
+        top: 78%; 
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .img-float-7 {
+        width: 70px;
+        height: 70px;
+        top: 55%; 
+        right: 25%; 
+    }
+
+    .hero-section {
+        margin-top: 20px; 
+        text-align: center;
+    }
+    span {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 20px; 
+        line-height: 31px; 
+    }
+
+    .hero-para {
+        font-size: 18px; 
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #8a8a8a;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .content, .work-content{
+        flex-direction: column;
+    }
+    .left-content, .right-content, .left-work, .right-work{
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .left-content, .left-work{
+        font-size: 30px;
+    }
+    .right-content, .right-work{
+        font-size: 18px;
+    }
+    .left-pharmacy-content{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    .right-pharmacy-content{
+        width: 100%;
+        margin-top:30px;
+    }
+    .view-btn{
+        margin: auto;
+    }
+    .pharmacy-capsule{
+        position: absolute;
+        top:-7%;
+        left:0;
+        width: 90px;
+        height: 90px;
+    }
+    .left-benefit-content{
+        width: 100%;
+    }
+    .right-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefits-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .benefit-bg-2{
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .left-rev-benefit-content{
+        width: 100%;
+    }
+    .right-rev-benefit-content{
+        padding-top: 15px;
+        width: 100%;
+    }
+    .benefit-rev-details{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .benefit-rev-bg-2 {
+        position: absolute;
+        top: 90%;
+        left: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .plan-card {
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+    .business-plan {
+        margin-top: 0; 
+        padding-top: 10%; 
+    }
+}
+
+/* Very small devices (576px and below) */
+@media (max-width : 575px) {
+    .heading-size{
+        font-size: 40px;
+    }
+    .bg-hero-image {
+        height: 200px; 
+        background-size: contain; 
+    }
+
+    .pharmacy_cartoon {
+        max-width: 150px; 
+        left: 50%; 
+        transform: translateX(-50%);
+        top: 10%; 
+    }
+    .img-float-1 {
+        width: 50px;
+        height: 50px; 
+        top: 73%; 
+        left: 31%; 
+        transform: translateX(-50%); 
+    }
+
+    .img-float-2 {
+        width: 50px; 
+        height: 55px; 
+        top: 80%; 
+        left: 63%; 
+    }
+
+    .img-float-3 {
+        width: 50px; 
+        height: 50px; 
+        top: 90%; 
+        left: 62%; 
+        transform: translateX(-50%); 
+    }
+
+    .img-float-4 {
+        width: 40px; 
+        height: 40px; 
+        top: 93%; 
+    }
+
+    .img-float-5 {
+        width: 40px; 
+        height: 40px; 
+        top: -2%; 
+    }
+
+    .img-float-6 {
+        width: 55px; 
+        height: 55px; 
+        top: 80%; 
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .img-float-7 {
+        width: 50px; 
+        height: 50px; 
+        top: 67%; 
+        right: 20%; 
+    }
+    .benefit-bg-1{
+        position: absolute;
+        top: -2%;
+        right: 5%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .benefit-rev-bg-1{
+        position: absolute;
+        top: -1%;
+        left: 0%;
+        width: 78px;
+        height: 78px;
+        transition: all 0.3s ease;
+    }
+    .menus{
+        flex-direction: column;
+        padding: 0 10px;
+        padding-top: 20px;
+    }
+    .copy-rights{
+        margin-top: 100px;
+    }
+    span {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 31px;
+    }
+}

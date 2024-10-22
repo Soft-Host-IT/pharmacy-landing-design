@@ -6,16 +6,24 @@ body {
     min-height: 100vh; 
     margin: 0;
 }
-
+.bg-navbar{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(4px) !important;
+}
 .bg-logo-img {
     background-image: url(../img/rectangle.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 47.51px;
-    height: 59px;
+    width: 74px;
+    height: 81px;
     gap: 0px;
-
-
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .whatsaap {
@@ -168,7 +176,7 @@ span {
 background: #2192FE;
 color:#0C1B42;
 border: none;
-padding-top: 5px;
+padding: 10px 15px;
 }
 .description{
     background: #0a0f40;
@@ -281,8 +289,8 @@ border-radius: 10px;
 .circle{
     background: white;
     border-radius: 50%;
-    height: 30px;
-    width:30px;
+    height: 27px;
+    width:27px;
 }
 .record{
     position: relative;
@@ -381,7 +389,7 @@ border-radius: 10px;
     align-items: center;
 }
 .subscription-panel{
-   width: 80%;
+   width: 100%;
 }
 .all-card{
     padding: 20px 10px;
@@ -393,6 +401,16 @@ border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    transition: 0.4s;
+}
+.card-design:hover{
+    background: #2192fe;
+}
+.card-design:hover .price, .card-design:hover .plan-title, .card-design:hover .plan-des, .card-design:hover .list-unstyled li{
+    color: white;
+}
+.card-design:hover .dot{
+    background: white;
 }
 
 .plan-card .price {
@@ -461,21 +479,30 @@ border-radius: 10px;
 .footer{
     background: #ddeeff;
 }
-.menus{
+.menu-all{
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: "outfit", sens-serif;
 }
-.menus div ul li{
-    list-style: none;
+.menus{
+    width: 80%;
 }
+.footer-logo{
+    width: 20%;
+}
+
 .list-heading{
     color:#3c3c3c !important;
     font-weight: 800;
 }
+.footer-list{
+    margin: 0;
+    padding-left:0 !important;
+}
 .footer-list li{
     color: #007bff;
     padding-bottom: 15px;
+    list-style:none ;
 }
 .copy-rights p{
     font-weight: 700;
@@ -500,6 +527,10 @@ border-radius: 10px;
 .email-custom:focus{
     outline: #007bff;
 }
+.mid{
+    margin-left: 15%;
+}
+
 @media (max-width: 991px) {
     .bg-hero-image {
         height: 350px; 
@@ -630,6 +661,12 @@ border-radius: 10px;
 
     .choose-btn {
         padding: 8px 20px;
+    }
+    .footer-list li, .footer-list li a{
+        font-size:14px ;
+    }
+    .mid{
+        margin-left: 10%;
     }
 }
 
@@ -800,6 +837,12 @@ border-radius: 10px;
         margin-top: 0; 
         padding-top: 10%; 
     }
+    .footer-list li, .footer-list li a{
+        font-size:12px ;
+    }
+    .mid{
+        margin-left: 8%;
+    }
 }
 
 /* Very small devices (576px and below) */
@@ -883,13 +926,23 @@ border-radius: 10px;
         height: 78px;
         transition: all 0.3s ease;
     }
-    .menus{
-        flex-direction: column;
-        padding: 0 10px;
-        padding-top: 20px;
-    }
     .copy-rights{
-        margin-top: 100px;
+        margin-top: 80px;
+    }
+    .menu-all{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .menus{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+    .latest-update{
+        text-align: center;
     }
     span {
         font-family: "Inter", sans-serif;

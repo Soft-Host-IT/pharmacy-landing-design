@@ -100,7 +100,6 @@ span {
     text-align: left;
     color: #8a8a8a;
     font-family: "Inter", sans-serif;
-
 }
 
 .main {
@@ -530,7 +529,51 @@ border-radius: 10px;
 .mid{
     margin-left: 15%;
 }
-
+ /* Our Product CSS */
+ .heading-product h1{
+text-align: center;
+ }
+ .product{
+    margin: 50px 0;
+ }
+ .product-image{
+    width: 30%;
+ }
+ .product-details{
+    width: 50%;
+ }
+ .product-details h2{
+    font-size: 37px;
+    font-weight: 700;
+    color: #0585ff;
+ }
+ .product-details p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+ }
+ .product-list li{
+    color: #0585ff;
+    font-weight: 600;
+    font-size: 15px;
+ }
+ .product-details h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 5%;
+ }
+ .order-btn{
+    background: #0585FF;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+ }
 @media (max-width: 991px) {
     .bg-hero-image {
         height: 350px; 
@@ -843,6 +886,18 @@ border-radius: 10px;
     .mid{
         margin-left: 8%;
     }
+    .product{
+        flex-direction: column;
+        margin: auto;
+    }
+    .product-image{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .product-details{
+        width: 100%;
+        padding: 10px 10px;
+    }
 }
 
 /* Very small devices (576px and below) */
@@ -851,21 +906,21 @@ border-radius: 10px;
         font-size: 40px;
     }
     .bg-hero-image {
-        height: 200px; 
+        height: 270px; 
         background-size: contain; 
     }
 
     .pharmacy_cartoon {
-        max-width: 150px; 
-        left: 50%; 
+        max-width: 191px; 
+        left: 48%; 
         transform: translateX(-50%);
-        top: 10%; 
+        top: 11%; 
     }
     .img-float-1 {
         width: 50px;
         height: 50px; 
         top: 73%; 
-        left: 31%; 
+        left: 28%; 
         transform: translateX(-50%); 
     }
 

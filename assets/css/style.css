@@ -3,23 +3,26 @@
 
 body {
     background: #f3f8ff;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0;
 }
-.bg-navbar{
+
+.bg-navbar {
     background-color: rgba(255, 255, 255, 0.5) !important;
     backdrop-filter: blur(4px) !important;
 }
+
 .bg-logo-img {
     background-image: url(../img/rectangle.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 74px;
-    height: 81px;
+    height: 80px;
     gap: 0px;
     position: relative;
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,12 +32,13 @@ body {
 .whatsaap {
     width: 65px;
     height: 65px;
-    margin-bottom:-13px;
+    margin-bottom: -13px;
 }
 
 .logo {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
+    padding: 1px 3px;
 }
 
 a {
@@ -52,7 +56,7 @@ a {
 }
 
 .text-blue-color {
-    color: #5eaefd;
+    color: #0585FF;
 }
 
 .text-gray {
@@ -64,11 +68,11 @@ a {
     color: rgba(0, 0, 0, 0.2);
 }
 
-span {
+.heading-size {
+    font-size: 46px !important;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    Size: 70px;
-    line-height: 61px
+    line-height: 50px;
 }
 
 .bg-hero-image {
@@ -114,7 +118,7 @@ span {
     left: 55%;
     gap: 0px;
     opacity: 1;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
 }
 
@@ -126,7 +130,7 @@ span {
     left: 88%;
     gap: 0px;
     opacity: 1;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
 }
 
@@ -138,66 +142,87 @@ span {
     left: 80%;
     gap: 0px;
     opacity: 1;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
 }
-.img-float-4{
+
+.img-float-4 {
     position: absolute;
     width: 88px;
     height: 78px;
     top: 90%;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.img-float-5{
+
+.img-float-5 {
     position: absolute;
     top: 0px;
     width: 90px;
     height: 78px;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.img-float-6{
+
+.img-float-6 {
     position: absolute;
     top: 85%;
     left: 55%;
     width: 94px;
     height: 94px;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.img-float-7{
+
+.img-float-7 {
     position: absolute;
     top: 5%;
     right: 5%;
     width: 114px;
     height: 114px;
-     transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.custom-btn{
-background: #2192FE;
-color:#0C1B42;
-border: none;
-padding: 10px 15px;
+
+.custom-btn {
+    background: #2192FE;
+    color: #0C1B42;
+    border: none;
+    padding: 10px 15px;
+    width: 50%;
 }
-.description{
+.see-more-btn{
+    background: linear-gradient(to right, #5eaefd, #0585FF);
+    border: none;
+}
+.see-more-btn:hover{
+background: #000;
+}
+.btn-tutorial{
+    width: 40%;
+}
+
+.description {
     background: #0a0f40;
 }
-.left-content{
+
+.left-content {
     color: #0585FF;
     font-weight: bolder;
     font-size: 43px;
     width: 50%;
-     font-family: "Outfit", sans-serif !important;
+    font-family: "Outfit", sans-serif !important;
 }
-.text-span{
-color: white;
+
+.text-span {
+    color: white;
 }
-.right-content{
+
+.right-content {
     color: #888888;
     font-size: 25px;
     padding: 10px;
     width: 50%;
-     font-family: "Outfit", sans-serif !important;
+    font-family: "Outfit", sans-serif !important;
 }
-.btn-view{
+
+.btn-view {
     margin-top: 20px;
     background: white;
     border-radius: 10px;
@@ -205,52 +230,62 @@ color: white;
     font-weight: bolder;
     color: black;
 }
-.btn-view:hover{
+
+.btn-view:hover {
     background: #000;
     color: #fff;
 }
-.how-we-work{
+
+.how-we-work {
     background: #edf4fc;
 }
-.work{
+
+.work {
     padding-top: 50px;
 }
-.work-title{
+
+.work-title {
     text-align: center;
     font-size: 17px;
     text-transform: uppercase;
     color: #359cfe;
     font-family: "Outfit", sans-serif !important;
 }
-.right-work{
+
+.right-work {
     color: #222222;
     font-size: 25px;
     padding: 10px;
     width: 50%;
-     font-family: "Outfit", sans-serif !important;
+    font-family: "Outfit", sans-serif !important;
 }
-.left-work{
+
+.left-work {
     color: #359cfe;
     font-weight: bold;
     font-size: 45px;
     width: 50%;
-     font-family: "Outfit", sans-serif !important;
+    font-family: "Outfit", sans-serif !important;
 }
-.btn-pricing{
+
+.btn-pricing {
     background: #359cfe;
-color:#0a0f40;
-border-radius: 10px;
+    color: #0a0f40;
+    border-radius: 10px;
     padding: 12px 25px;
     font-weight: bolder;
 }
-.btn-pricing:hover{
+
+.btn-pricing:hover {
     background: #000;
     color: #fff;
 }
-.how-we-work{
+
+.how-we-work {
     position: relative;
 }
-.work-bg-1{
+
+.work-bg-1 {
     position: absolute;
     top: 0%;
     right: 5%;
@@ -258,7 +293,8 @@ border-radius: 10px;
     height: 78px;
     transition: all 0.3s ease;
 }
-.work-bg-2{
+
+.work-bg-2 {
     position: absolute;
     top: 75%;
     right: 5%;
@@ -266,60 +302,77 @@ border-radius: 10px;
     height: 78px;
     transition: all 0.3s ease;
 }
-.pharmacy-record{
+
+.pharmacy-record {
     background: #ddeeff;
     padding: 40px 0;
 }
-.left-pharmacy-content{
+
+.left-pharmacy-content {
     width: 60%;
     padding: 0 20px;
 }
-.left-pharmacy-content p, .benefits-details p, .benefit-rev-details p{
+
+.left-pharmacy-content p,
+.benefits-details p,
+.benefit-rev-details p {
     font-size: 17px;
-    color:#0585FF;
+    color: #0585FF;
 }
-.left-pharmacy-content h2, .benefits-details h2, .benefit-rev-details h2{
+
+.left-pharmacy-content h2,
+.benefits-details h2,
+.benefit-rev-details h2 {
     font-size: 45px;
-    color:#0585FF;
+    color: #0585FF;
 }
-.right-pharmacy-content{
+
+.right-pharmacy-content {
     width: 40%;
 }
-.circle{
+
+.circle {
     background: white;
     border-radius: 50%;
     height: 27px;
-    width:27px;
+    width: 27px;
 }
-.record{
+
+.record {
     position: relative;
 }
-.pharmacy-capsule{
+
+.pharmacy-capsule {
     position: absolute;
-    top:-20%;
-    left:0;
+    top: -20%;
+    left: 0;
     width: 144px;
     height: 144px;
 }
-.benefits{
+
+.benefits {
     background: #edf4fc;
     padding: 50px 0;
     position: relative;
 }
-.left-benefit-content{
+
+.left-benefit-content {
     width: 40%;
     background-image: url(../img/cap-2.png);
     background-repeat: no-repeat;
     background-position: -4% 15%;
 }
-.right-benefit-content{
+
+.right-benefit-content {
     width: 60%;
     text-align: right;
 }
-.benefits-details{
+
+.benefits-details {
     width: 90%;
 }
-.benefit-bg-1{
+
+.benefit-bg-1 {
     position: absolute;
     top: 0%;
     right: 5%;
@@ -327,7 +380,8 @@ border-radius: 10px;
     height: 78px;
     transition: all 0.3s ease;
 }
-.benefit-bg-2{
+
+.benefit-bg-2 {
     position: absolute;
     top: 75%;
     right: 5%;
@@ -335,25 +389,30 @@ border-radius: 10px;
     height: 78px;
     transition: all 0.3s ease;
 }
-.benefits-rev{
+
+.benefits-rev {
     background: #ddeeff;
     padding: 50px 0;
     position: relative;
 }
-.left-rev-benefit-content{
+
+.left-rev-benefit-content {
     width: 60%;
     text-align: right;
 }
-.benefit-rev-details{
+
+.benefit-rev-details {
     width: 90%;
 }
-.right-rev-benefit-content{
+
+.right-rev-benefit-content {
     width: 40%;
     background-image: url(../img/capsule.png);
     background-repeat: no-repeat;
     background-position: 104% 15%;
 }
-.benefit-rev-bg-1{
+
+.benefit-rev-bg-1 {
     position: absolute;
     top: 0%;
     left: 5%;
@@ -361,7 +420,8 @@ border-radius: 10px;
     height: 78px;
     transition: all 0.3s ease;
 }
-.benefit-rev-bg-2{
+
+.benefit-rev-bg-2 {
     position: absolute;
     top: 75%;
     left: 5%;
@@ -369,14 +429,16 @@ border-radius: 10px;
     height: 78px;
     transition: all 0.3s ease;
 }
-.faq-heading{
-    color:#0585FF;
+
+.faq-heading {
+    color: #0585FF;
     font-size: 40px;
     text-align: center;
     background: #ddeeff;
     padding: 20px 0;
 }
-.subscription{
+
+.subscription {
     background-image: url(../img/subs.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -387,13 +449,16 @@ border-radius: 10px;
     justify-content: center;
     align-items: center;
 }
-.subscription-panel{
-   width: 100%;
+
+.subscription-panel {
+    width: 100%;
 }
-.all-card{
+
+.all-card {
     padding: 20px 10px;
     border-radius: 20px;
 }
+
 .plan-card {
     border-radius: 10px;
     padding: 0px;
@@ -402,13 +467,19 @@ border-radius: 10px;
     padding: 20px;
     transition: 0.4s;
 }
-.card-design:hover{
+
+.card-design:hover {
     background: #2192fe;
 }
-.card-design:hover .price, .card-design:hover .plan-title, .card-design:hover .plan-des, .card-design:hover .list-unstyled li{
+
+.card-design:hover .price,
+.card-design:hover .plan-title,
+.card-design:hover .plan-des,
+.card-design:hover .list-unstyled li {
     color: white;
 }
-.card-design:hover .dot{
+
+.card-design:hover .dot {
     background: white;
 }
 
@@ -470,104 +541,128 @@ border-radius: 10px;
     top: 2%;
     right: 5%;
     background-color: white;
-    color:  #007bff;
+    color: #007bff;
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 50px;
 }
-.footer{
+
+.footer {
     background: #ddeeff;
 }
-.menu-all{
+
+.menu-all {
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: "outfit", sens-serif;
 }
-.menus{
-    width: 80%;
-}
-.footer-logo{
-    width: 20%;
+
+.menus {
+    width: 40%;
+    justify-content: space-around;
 }
 
-.list-heading{
-    color:#3c3c3c !important;
+.footer-logo {
+    width: 60%;
+    justify-content: space-around;
+}
+
+.list-heading {
+    color: #3c3c3c !important;
     font-weight: 800;
 }
-.footer-list{
+
+.footer-list {
     margin: 0;
-    padding-left:0 !important;
+    padding-left: 0 !important;
 }
-.footer-list li{
+
+.footer-list li {
     color: #007bff;
     padding-bottom: 15px;
-    list-style:none ;
+    list-style: none;
 }
-.copy-rights p{
+
+.copy-rights p {
     font-weight: 700;
     color: #007bff;
     padding-bottom: 50px;
 }
-.latest-update{
+
+.latest-update {
     font-weight: 700;
     color: #007bff;
     padding-bottom: 20px;
 }
-.email-custom{
+
+.email-custom {
     background: #007bff;
     border: none;
     padding: 10px;
     border-radius: 20px;
     color: white;
 }
-.email-custom::placeholder{
+
+.email-custom::placeholder {
     color: white;
 }
-.email-custom:focus{
+
+.email-custom:focus {
     outline: #007bff;
 }
-.mid{
+
+.mid {
     margin-left: 15%;
 }
- /* Our Product CSS */
- .heading-product h1{
-text-align: center;
- }
- .product{
+
+/* Our Product CSS */
+.heading-product h1 {
+    text-align: center;
+}
+
+.product {
     margin: 100px 0;
- }
- .product-image{
+}
+
+.product-image {
     width: 30%;
- }
- .product-details{
+}
+
+.product-details {
     width: 50%;
- }
- .product-details h2{
+}
+
+.product-details h2 {
     font-size: 37px;
     font-weight: 700;
     color: #0585ff;
     padding-bottom: 2%;
- }
- .product-details p{
+}
+
+.product-details p {
     font-size: 15px;
     font-weight: 600;
     color: #000000;
- }
- .product-list{
+}
+
+.product-list {
     padding-bottom: 3% !important;
- }
- .product-list li{
+}
+
+.product-list li {
     color: #0585ff;
     font-weight: 600;
     font-size: 15px;
- }
- .product-details h4{
+}
+
+.product-details h4 {
     font-size: 28px;
     font-weight: 600;
     color: #000000;
     padding-bottom: 3%;
- }
- .order-btn{
+}
+
+.order-btn {
     background: linear-gradient(to right, #5eaefd, #0585FF);
     color: white;
     padding-top: 5px;
@@ -577,85 +672,123 @@ text-align: center;
     border-radius: 10px;
     outline: none;
     border: none;
- }
- .order-btn:hover{
+}
+
+.order-btn:hover {
     color: white;
     background: #000;
- }
- .product-2{
+}
+
+.product-2 {
     margin: 100px 0;
- }
- .product-2-image{
+}
+
+.product-2-image {
     width: 30%;
- }
+}
+
+/* Demo Request */
+.input-request {
+    width: 25%;
+}
+
+.custom-input {
+    background: linear-gradient(#5eaefd, #0585FF, #0585FF);
+    border: none;
+    padding: 5px 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.custom-input::placeholder {
+    color: white;
+}
+
+.custom-input:focus {
+    outline: #0585FF;
+}
+
 @media (max-width: 991px) {
     .bg-hero-image {
-        height: 350px; 
-        background-size: contain; 
+        height: 350px;
+        background-size: contain;
     }
 
     .pharmacy_cartoon {
-        max-width: 310px; 
+        max-width: 310px;
         left: 10%;
-        top: 9%; 
+        top: 9%;
     }
+
     .img-float-1 {
-        width: 100px; 
-        height: 140px; 
-        top: 16%; 
-        left: 60%; 
-        transform: translateX(-50%); 
+        width: 100px;
+        height: 140px;
+        top: 16%;
+        left: 60%;
+        transform: translateX(-50%);
     }
 
     .img-float-2 {
-        width: 90px; 
-        height: 70px; 
-        top: 45%; 
-        left: 85% 
+        width: 90px;
+        height: 70px;
+        top: 45%;
+        left: 85%
     }
 
     .img-float-3 {
-        width: 80px; 
-        height: 80px; 
-        top: 63%; 
-        left: 75%; 
+        width: 80px;
+        height: 80px;
+        top: 63%;
+        left: 75%;
     }
 
     .img-float-4 {
-        width: 50px; 
-        height: 50px; 
-        top: 98%; 
+        width: 50px;
+        height: 50px;
+        top: 98%;
     }
 
     .img-float-5 {
-        width: 50px; 
-        height: 50px; 
-        top: -4%; 
+        width: 50px;
+        height: 50px;
+        top: -4%;
     }
 
     .img-float-6 {
-        width: 75px; 
-        height: 75px; 
-        top: 75%; 
-        left: 60%; 
-        transform: translateX(-50%); 
+        width: 75px;
+        height: 75px;
+        top: 75%;
+        left: 60%;
+        transform: translateX(-50%);
     }
 
     .img-float-7 {
-        width: 90px; 
-        height: 90px; 
-        top: 8%; 
-        right: 5%; 
+        width: 90px;
+        height: 90px;
+        top: 8%;
+        right: 5%;
     }
-    .hero-section{
+
+    .hero-section {
         margin-top: 30px;
     }
-    span {
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        Size: 50px;
-        line-height: 31px
+
+    .custom-btn {
+        background: #2192FE;
+        color: #0C1B42;
+        border: none;
+        padding: 7px 12px;
+        font-size: 10px;
+        width: 60%;
     }
+    .btn-tutorial{
+        width: 30%;
+        font-size: 10px
+    }
+    .view-btn{
+        width: 100% !important;
+    }
+
     .hero-para {
         font-size: 18px;
         font-weight: 400;
@@ -663,21 +796,25 @@ text-align: center;
         letter-spacing: 0.02em;
         text-align: left;
         color: #8a8a8a;
-    
+
     }
-    .left-benefit-content{
+
+    .left-benefit-content {
         width: 100%;
     }
-    .right-benefit-content{
+
+    .right-benefit-content {
         padding-top: 15px;
         width: 100%;
     }
-    .benefits-details{
+
+    .benefits-details {
         width: 100%;
-        text-align: center;
+        text-align: end;
         margin: auto;
     }
-    .benefit-bg-2{
+
+    .benefit-bg-2 {
         position: absolute;
         top: 45%;
         right: 5%;
@@ -685,16 +822,19 @@ text-align: center;
         height: 78px;
         transition: all 0.3s ease;
     }
-    .left-rev-benefit-content{
+
+    .left-rev-benefit-content {
         width: 100%;
     }
-    .right-rev-benefit-content{
+
+    .right-rev-benefit-content {
         padding-top: 15px;
         width: 100%;
     }
-    .benefit-rev-details{
+
+    .benefit-rev-details {
         width: 100%;
-        text-align: center;
+        text-align: end;
         margin: auto;
     }
 
@@ -719,43 +859,50 @@ text-align: center;
     .choose-btn {
         padding: 8px 20px;
     }
-    .footer-list li, .footer-list li a{
-        font-size:14px ;
+
+    .footer-list li,
+    .footer-list li a {
+        font-size: 14px;
     }
-    .mid{
-        margin-left: 10%;
-    }
+
     /* our product */
-    .product-image{
+    .product-image {
         width: 40%;
-     }
-     .product-details{
+    }
+
+    .product-details {
         width: 50%;
-     }
-     .product-details h2{
+    }
+
+    .product-details h2 {
         font-size: 25px;
         font-weight: 700;
         color: #0585ff;
-     }
-     .product-details p{
+    }
+
+    .product-details p {
         font-size: 13px;
         font-weight: 600;
         color: #000000;
-     }
-     .product-list{
+    }
+
+    .product-list {
         padding-bottom: 0% !important;
-     }
-     .product-list li{
+    }
+
+    .product-list li {
         color: #0585ff;
         font-weight: 600;
         font-size: 13px;
-     }
-     .product-details h4{
+    }
+
+    .product-details h4 {
         font-size: 21px;
         font-weight: 600;
         color: #000000;
-     }
-     .order-btn{
+    }
+
+    .order-btn {
         background: linear-gradient(to right, #5eaefd, #0585FF);
         color: white;
         padding-top: 3px;
@@ -765,168 +912,202 @@ text-align: center;
         border-radius: 10px;
         outline: none;
         border: none;
-     }
-     .order-btn:hover{
+    }
+
+    .order-btn:hover {
         color: white;
         background: #000;
-     }
-     .product-2-image{
+    }
+
+    .product-2-image {
         width: 40%;
-     }
+    }
 }
 
 /* Phone devices (576px and larger) */
 @media (max-width: 767px) {
-    .heading-size{
+    .heading-size {
         font-size: 42px;
     }
+
     .bg-hero-image {
-        height: 250px; 
-        background-size: contain; 
+        height: 250px;
+        background-size: contain;
     }
 
     .pharmacy_cartoon {
-        max-width: 192px; 
-        left: 47%; 
-        transform: translateX(-50%); 
-        top: 4%; 
+        max-width: 192px;
+        left: 47%;
+        transform: translateX(-50%);
+        top: 4%;
     }
 
     .img-float-1 {
-        width: 65px; 
-        height: 70px; 
-        top: 65%; 
-        left: 35%; 
-        transform: translateX(-50%); 
+        width: 65px;
+        height: 70px;
+        top: 65%;
+        left: 35%;
+        transform: translateX(-50%);
     }
 
     .img-float-2 {
         width: 70px;
         height: 50px;
-        top: 77%; 
-        left: 60%; 
+        top: 77%;
+        left: 60%;
     }
 
     .img-float-3 {
-        width: 70px; 
+        width: 70px;
         height: 70px;
-        top: 86%; 
-        left: 52%; 
+        top: 86%;
+        left: 52%;
     }
 
     .img-float-4 {
-        width: 40px; 
+        width: 40px;
         height: 40px;
-        top: 95%; 
+        top: 95%;
     }
 
     .img-float-5 {
         width: 40px;
         height: 40px;
-        top: -2%; 
+        top: -2%;
     }
 
     .img-float-6 {
-        width: 60px; 
+        width: 60px;
         height: 60px;
-        top: 78%; 
-        left: 50%; 
+        top: 78%;
+        left: 50%;
         transform: translateX(-50%);
     }
 
     .img-float-7 {
         width: 70px;
         height: 70px;
-        top: 55%; 
-        right: 25%; 
+        top: 55%;
+        right: 25%;
     }
 
     .hero-section {
-        margin-top: 20px; 
-        text-align: center;
-    }
-    span {
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        font-size: 20px; 
-        line-height: 31px; 
+        margin-top: 20px;
+        text-align: start;
     }
 
     .hero-para {
-        font-size: 18px; 
+        font-size: 14px;
         font-weight: 400;
-        line-height: 28px; 
+        line-height: 24px;
         letter-spacing: 0.02em;
-        text-align: left;
+        text-align: start;
         color: #8a8a8a;
-        text-align: center;
         margin-top: 10px;
     }
-    .content, .work-content{
+
+    .content,
+    .work-content {
         flex-direction: column;
     }
-    .left-content, .right-content, .left-work, .right-work{
+
+    .left-content,
+    .right-content,
+    .left-work,
+    .right-work {
         width: 100%;
         padding: 5px 10px;
-        text-align: center;
+        text-align: left;
     }
-    .left-content, .left-work{
+
+    .left-content
+    .left-work {
         font-size: 30px;
     }
-    .right-content, .right-work{
+
+    .right-content,
+    .right-work {
         font-size: 18px;
     }
-    .left-pharmacy-content{
+
+    .left-pharmacy-content {
         width: 100%;
         padding: 5px;
-        text-align: center;
+        text-align: left;
     }
-    .right-pharmacy-content{
+
+    .right-pharmacy-content {
         width: 100%;
-        margin-top:30px;
+        margin-top: 30px;
     }
-    .view-btn{
-        margin: auto;
+
+    .view-btn {
+        margin: start;
     }
-    .pharmacy-capsule{
+
+    .custom-btn {
+        background: #2192FE;
+        color: #0C1B42;
+        border: none;
+        padding: 7px 12px;
+        font-size: 10px;
+        width: 60%;
+    }
+    .btn-tutorial{
+        width: 30%;
+        font-size: 10px
+    }
+
+    .pharmacy-capsule {
         position: absolute;
-        top:-7%;
-        left:0;
+        top: -7%;
+        left: 0;
         width: 90px;
         height: 90px;
     }
-    .left-benefit-content{
+
+    .left-benefit-content {
         width: 100%;
     }
-    .right-benefit-content{
+
+    .right-benefit-content {
         padding-top: 15px;
         width: 100%;
     }
-    .benefits-details{
+
+    .benefits-details {
         width: 100%;
-        text-align: center;
+        text-align: end;
         margin: auto;
     }
-    .benefit-bg-2{
+
+    .benefit-bg-2 {
         position: absolute;
-        top: 45%;
+        top: 38%;
         right: 5%;
         width: 78px;
         height: 78px;
         transition: all 0.3s ease;
     }
-    .left-rev-benefit-content{
+    .benefit-rev-content{
+        flex-direction: column-reverse;
+    }
+
+    .left-rev-benefit-content {
         width: 100%;
     }
-    .right-rev-benefit-content{
+
+    .right-rev-benefit-content {
         padding-top: 15px;
         width: 100%;
     }
-    .benefit-rev-details{
+
+    .benefit-rev-details {
         width: 100%;
-        text-align: center;
+        text-align: right;
         margin: auto;
     }
+
     .benefit-rev-bg-2 {
         position: absolute;
         top: 90%;
@@ -935,60 +1116,80 @@ text-align: center;
         height: 78px;
         transition: all 0.3s ease;
     }
+
     .plan-card {
-        margin-bottom: 20px; /* Add margin between cards */
+        margin-bottom: 20px;
     }
+
     .business-plan {
-        margin-top: 0; 
-        padding-top: 10%; 
+        margin-top: 0;
+        padding-top: 10%;
     }
-    .footer-list li, .footer-list li a{
-        font-size:12px ;
+
+    .footer-list li,
+    .footer-list li a {
+        font-size: 12px;
     }
-    .mid{
-        margin-left: 8%;
+
+    .menu-all{
+        flex-direction: column;
     }
+    .menus{
+        width: 100%;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+
     /* our product */
-    .product{
+    .product {
         flex-direction: column;
         margin: auto;
         margin-top: 25px;
     }
-    .product-image{
+
+    .product-image {
         width: 100%;
         padding: 10px 10px;
     }
-    .product-details{
+
+    .product-details {
         width: 100%;
         padding: 10px 10px;
     }
-    .product-details h2{
+
+    .product-details h2 {
         font-size: 37px;
         font-weight: 700;
         color: #0585ff;
         padding-bottom: 2%;
         text-align: center;
-     }
-     .product-details p{
+    }
+
+    .product-details p {
         font-size: 15px;
         font-weight: 600;
         color: #000000;
-     }
-     .product-list{
+    }
+
+    .product-list {
         padding-bottom: 3% !important;
-     }
-     .product-list li{
+    }
+
+    .product-list li {
         color: #0585ff;
         font-weight: 600;
         font-size: 15px;
-     }
-     .product-details h4{
+    }
+
+    .product-details h4 {
         font-size: 28px;
         font-weight: 600;
         color: #000000;
         padding-bottom: 3%;
-     }
-     .order-btn{
+    }
+
+    .order-btn {
         background: linear-gradient(to right, #5eaefd, #0585FF);
         color: white;
         padding-top: 5px;
@@ -998,86 +1199,103 @@ text-align: center;
         border-radius: 10px;
         outline: none;
         border: none;
-     }
-     .product-2{
+    }
+
+    .product-2 {
         flex-direction: column-reverse;
         margin-top: 25px;
-     }
-     .product-2{
+    }
+
+    .product-2 {
         margin: 50px 0;
-     }
-     .product-2-image{
+    }
+
+    .product-2-image {
         width: 100%;
         padding-top: 20px;
-     }
+    }
+
+    /* Demo Request */
+    .input-request {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .custom-input {
+        width: 100%;
+        padding: 10px 10px;
+    }
 }
 
 /* Very small devices (576px and below) */
 @media (max-width : 575px) {
-    .heading-size{
+    .heading-size {
         font-size: 40px;
     }
+
     .bg-hero-image {
-        height: 270px; 
-        background-size: contain; 
+        height: 270px;
+        background-size: contain;
     }
 
     .pharmacy_cartoon {
-        max-width: 191px; 
-        left: 48%; 
+        max-width: 191px;
+        left: 48%;
         transform: translateX(-50%);
-        top: 11%; 
+        top: 11%;
     }
+
     .img-float-1 {
         width: 50px;
-        height: 50px; 
-        top: 73%; 
-        left: 28%; 
-        transform: translateX(-50%); 
+        height: 50px;
+        top: 73%;
+        left: 28%;
+        transform: translateX(-50%);
     }
 
     .img-float-2 {
-        width: 50px; 
-        height: 55px; 
-        top: 80%; 
-        left: 63%; 
+        width: 50px;
+        height: 55px;
+        top: 80%;
+        left: 63%;
     }
 
     .img-float-3 {
-        width: 50px; 
-        height: 50px; 
-        top: 90%; 
-        left: 62%; 
-        transform: translateX(-50%); 
+        width: 50px;
+        height: 50px;
+        top: 90%;
+        left: 62%;
+        transform: translateX(-50%);
     }
 
     .img-float-4 {
-        width: 40px; 
-        height: 40px; 
-        top: 93%; 
+        width: 40px;
+        height: 40px;
+        top: 93%;
     }
 
     .img-float-5 {
-        width: 40px; 
-        height: 40px; 
-        top: -2%; 
+        width: 40px;
+        height: 40px;
+        top: -2%;
     }
 
     .img-float-6 {
-        width: 55px; 
-        height: 55px; 
-        top: 80%; 
-        left: 50%; 
+        width: 55px;
+        height: 55px;
+        top: 80%;
+        left: 50%;
         transform: translateX(-50%);
     }
 
     .img-float-7 {
-        width: 50px; 
-        height: 50px; 
-        top: 67%; 
-        right: 20%; 
+        width: 50px;
+        height: 50px;
+        top: 67%;
+        right: 20%;
     }
-    .benefit-bg-1{
+
+    .benefit-bg-1 {
         position: absolute;
         top: -2%;
         right: 5%;
@@ -1085,7 +1303,8 @@ text-align: center;
         height: 78px;
         transition: all 0.3s ease;
     }
-    .benefit-rev-bg-1{
+
+    .benefit-rev-bg-1 {
         position: absolute;
         top: -1%;
         left: 0%;
@@ -1093,28 +1312,59 @@ text-align: center;
         height: 78px;
         transition: all 0.3s ease;
     }
-    .copy-rights{
+
+    .copy-rights {
         margin-top: 80px;
     }
-    .menu-all{
+
+    .menu-all {
         flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .menus{
+
+    .menus {
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    .footer-logo{
+
+    .footer-logo {
         width: 100%;
     }
-    .latest-update{
+    .footer-img img{
+        width: 100%;
+    }
+    .footer-img img{
+        width: 180px;
+    }
+    .email-custom{
+        width: 180px;
+    }
+
+    .latest-update {
         text-align: center;
     }
-    span {
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 31px;
+    .view-btn{
+        width: 100% !important;
+    }
+
+    .custom-btn {
+        background: #2192FE;
+        color: #0C1B42;
+        border: none;
+        padding: 7px 12px;
+        font-size: 10px;
+        width: 60%;
+    }
+    .btn-tutorial{
+        width: 30%;
+        font-size: 10px
+    }
+    .see-more-btn{
+        background: linear-gradient(to right, #5eaefd, #0585FF);
+        border: none;
+    }
+    .demo-video{
+        font-size: 10px;
     }
 }

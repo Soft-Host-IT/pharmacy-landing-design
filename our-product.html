@@ -27,31 +27,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown ms-3">
-                        <a class="nav-link dropdown-toggle text-color" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Our Products
-                        </a>
-                        <ul class="dropdown-menu ms-3" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-color" href="#">Action</a></li>
-                            <li><a class="dropdown-item text-color" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-color" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active text-color" aria-current="page" href="our-product.html">Our Product</a>
                     </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link active text-color" aria-current="page" href="#">Price</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" href="demo-request.html">Demo Request</a>
+                        <a class="nav-link active text-color" aria-current="page" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Demo Request</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" href="#">About Us</a>
+                        <a class="nav-link active text-color" aria-current="page" href="about-us.html">About Us</a>
                     </li>
                 </ul>
                 <div class="phone">
@@ -63,6 +49,80 @@
             </div>
         </div>
     </nav>
+       <!-- Demo Request Modal -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-blue-color" id="exampleModalLabel">Request For Software Demo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row px-2">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Proprietor Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Proprietor Name">
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Name">
+                          </div>
+                    </div>
+                </div>
+                <div class="row px-2">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Phone<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="+8801XXXXXXXXX">
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">WhatsApp<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="+8801XXXXXXXXX">
+                          </div>
+                    </div>
+                </div>
+                <div class="row px-2">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Email<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Email">
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Which software demo you want?<span class="text-danger">*</span></label>
+                            <select name="" id="" class="form-select">
+                                <option selected disabled>Select a software</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+                <div class="row px-2">
+                    <div class="col-md-12">
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Address<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Address">
+                          </div>
+                    </div>
+                </div>
+                <div class="mb-1 px-2">
+                  <label for="message-text" class="col-form-label">Description/Note</label>
+                  <textarea class="form-control" id="message-text" placeholder="Do you want to say something?"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-primary rounded-pill shadow w-50 w-lg-auto mb-3 btn-request">Send Request</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <!-- Heading section -->
     <section>
         <div class="container">
@@ -212,7 +272,7 @@
     <section>
         <div class="footer">
             <div class="container">
-                <div class="menu-all d-flex justify-content-between">
+                <div class="menu-all d-flex flex-wrap">
                     <div class="menus d-flex">
                         <div class="footer-links">
                             <ul class="footer-list">
@@ -233,7 +293,9 @@
                                 <li> <a href="#">User Testing</a></li>
                             </ul>
                         </div>
-                        <div class="footer-links mid">
+                    </div>
+                    <div class="footer-logo d-flex">
+                        <div class="footer-links">
                             <ul class="footer-list">
                                 <li class="list-heading">Resources</li>
                                 <li> <a href="#">Blog</a></li>
@@ -241,16 +303,14 @@
                                 <li> <a href="#">Testimonials</a></li>
                             </ul>
                         </div>
-                        <div class="footer-links mid">
+                        <div class="footer-links">
                             <ul class="footer-list">
                                 <li class="list-heading">Follow Us</li>
                                 <li> <a href="#">Instagram</a></li>
                                 <li> <a href="#">figma</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="footer-logo">
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column footer-img">
                             <img class="mb-4" src="assets/img/softhostit.png" alt="">
                             <p class="latest-update">Get Latest Updates</p>
                             <input class="email-custom" type="email" placeholder="Your Email">

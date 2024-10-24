@@ -180,21 +180,50 @@ a {
     transition: all 0.3s ease;
 }
 
+.modal-dialog {
+    max-width: 53%;
+    width: 100%;
+}
+
 .custom-btn {
     background: #2192FE;
     color: #0C1B42;
     border: none;
     padding: 10px 15px;
     width: 50%;
+    transition: 0.3s ease;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
-.see-more-btn{
-    background: linear-gradient(to right, #5eaefd, #0585FF);
+
+.custom-btn strong {
+    margin-top: 2px;
+}
+
+.custom-btn:hover {
+    background: #0C1B42;
+    transform: translateY(-2px);
+}
+
+.custom-btn:hover .circle-navy {
+    background: white;
+}
+
+.see-more-btn {
+    background-color: #5eaefd;
+    /* Solid color fallback */
+    background-image: linear-gradient(to right, #5eaefd, #0585FF);
     border: none;
+    transition: 0.5s ease;
 }
-.see-more-btn:hover{
-background: #000;
+
+.see-more-btn:hover {
+    background: #000;
+    transform: translateY(-2px);
 }
-.btn-tutorial{
+
+.btn-tutorial {
     width: 40%;
 }
 
@@ -234,6 +263,7 @@ background: #000;
 .btn-view:hover {
     background: #000;
     color: #fff;
+    transform: translateY(-2px);
 }
 
 .how-we-work {
@@ -274,11 +304,13 @@ background: #000;
     border-radius: 10px;
     padding: 12px 25px;
     font-weight: bolder;
+    transition: 0.3s ease;
 }
 
 .btn-pricing:hover {
     background: #000;
     color: #fff;
+    transform: translateY(-2px);
 }
 
 .how-we-work {
@@ -336,6 +368,24 @@ background: #000;
     border-radius: 50%;
     height: 27px;
     width: 27px;
+}
+
+.circle-navy {
+    background: #0C1B42;
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
+    transition: 0.3s ease;
+}
+
+.btn-request {
+    transition: 0.3s ease;
+}
+
+.btn-request:hover {
+    background: #0C1B42;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .record {
@@ -676,7 +726,7 @@ background: #000;
 
 .order-btn:hover {
     color: white;
-    background: #000;
+    background: #0C1B42;
 }
 
 .product-2 {
@@ -687,27 +737,84 @@ background: #000;
     width: 30%;
 }
 
-/* Demo Request */
-.input-request {
-    width: 25%;
-}
-
-.custom-input {
-    background: linear-gradient(#5eaefd, #0585FF, #0585FF);
-    border: none;
-    padding: 5px 10px;
-    width: 90%;
-    border-radius: 5px;
-}
-
-.custom-input::placeholder {
+/* about us */
+.about-us {
+    background: linear-gradient(to right, #5eaefd, #0585FF);
     color: white;
+    font-family: "Outfit", sens-serif;
 }
 
-.custom-input:focus {
-    outline: #0585FF;
+.about-us-content {
+    width: 45%;
+    padding: 20px 25px;
 }
 
+.about-us-details h1 {
+    font-size: 64px;
+    font-weight: 800;
+    padding-top: 5px;
+}
+
+.about-us-details p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.about-us-details h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.about-us-btn {
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.about-btn {
+    background-color: #5eaefd;
+    background-image: linear-gradient(to right, #0585FF);
+    border: none;
+    transition: 0.5s ease;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px white;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    transform: translateY(-2px);
+    background: #0C1B42;
+}
+.company, .team{
+    width: 80%;
+    font-family: "Outfit", sens-serif;
+}
+.company h2, .team h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+.company p, .team p{
+    font-size: 16px;
+}
+.go-home{
+    margin-bottom: 100px;
+}
+.go-btn{
+    background: white;
+    color:#0585FF;
+    border: 1px solid #0585FF;
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: 0.3s ease;
+}
+.go-btn:hover{
+    background: #0C1B42;
+    color: white;
+    transform: translateY(-2px);
+}
 @media (max-width: 991px) {
     .bg-hero-image {
         height: 350px;
@@ -778,14 +885,16 @@ background: #000;
         color: #0C1B42;
         border: none;
         padding: 7px 12px;
-        font-size: 10px;
+        font-size: 12px;
         width: 60%;
     }
-    .btn-tutorial{
+
+    .btn-tutorial {
         width: 30%;
         font-size: 10px
     }
-    .view-btn{
+
+    .view-btn {
         width: 100% !important;
     }
 
@@ -916,11 +1025,16 @@ background: #000;
 
     .order-btn:hover {
         color: white;
-        background: #000;
+        background: #0C1B42;
     }
 
     .product-2-image {
         width: 40%;
+    }
+
+    /* about us */
+    .about-us-content {
+        width: 80%;
     }
 }
 
@@ -1006,6 +1120,11 @@ background: #000;
         margin-top: 10px;
     }
 
+    .modal-dialog {
+        max-width: 80%;
+        width: 100%;
+    }
+
     .content,
     .work-content {
         flex-direction: column;
@@ -1020,8 +1139,7 @@ background: #000;
         text-align: left;
     }
 
-    .left-content
-    .left-work {
+    .left-content .left-work {
         font-size: 30px;
     }
 
@@ -1050,10 +1168,11 @@ background: #000;
         color: #0C1B42;
         border: none;
         padding: 7px 12px;
-        font-size: 10px;
+        font-size: 11px;
         width: 60%;
     }
-    .btn-tutorial{
+
+    .btn-tutorial {
         width: 30%;
         font-size: 10px
     }
@@ -1089,7 +1208,8 @@ background: #000;
         height: 78px;
         transition: all 0.3s ease;
     }
-    .benefit-rev-content{
+
+    .benefit-rev-content {
         flex-direction: column-reverse;
     }
 
@@ -1131,13 +1251,15 @@ background: #000;
         font-size: 12px;
     }
 
-    .menu-all{
+    .menu-all {
         flex-direction: column;
     }
-    .menus{
+
+    .menus {
         width: 100%;
     }
-    .footer-logo{
+
+    .footer-logo {
         width: 100%;
     }
 
@@ -1146,6 +1268,8 @@ background: #000;
         flex-direction: column;
         margin: auto;
         margin-top: 25px;
+        background: #ddeeff;
+        padding: 20px;
     }
 
     .product-image {
@@ -1159,11 +1283,11 @@ background: #000;
     }
 
     .product-details h2 {
-        font-size: 37px;
+        font-size: 27px;
         font-weight: 700;
         color: #0585ff;
         padding-bottom: 2%;
-        text-align: center;
+        text-align: start;
     }
 
     .product-details p {
@@ -1203,10 +1327,7 @@ background: #000;
 
     .product-2 {
         flex-direction: column-reverse;
-        margin-top: 25px;
-    }
-
-    .product-2 {
+        padding: 20px;
         margin: 50px 0;
     }
 
@@ -1215,15 +1336,26 @@ background: #000;
         padding-top: 20px;
     }
 
-    /* Demo Request */
-    .input-request {
+    /* about us */
+    .about-us-content {
         width: 100%;
-        padding-top: 20px;
     }
 
-    .custom-input {
+    .about-us-details h1 {
+        font-size: 54px;
+        font-weight: 800;
+        padding-top: 5px;
+    }
+    .about-us-details p {
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 5px;
+    }
+    .company, .team{
+        background: #ddeeff;
+        padding: 20px;
         width: 100%;
-        padding: 10px 10px;
+        font-family: "Outfit", sens-serif;
     }
 }
 
@@ -1295,6 +1427,11 @@ background: #000;
         right: 20%;
     }
 
+    .modal-dialog {
+        max-width: 96%;
+        width: 100%;
+    }
+
     .benefit-bg-1 {
         position: absolute;
         top: -2%;
@@ -1331,20 +1468,24 @@ background: #000;
     .footer-logo {
         width: 100%;
     }
-    .footer-img img{
+
+    .footer-img img {
         width: 100%;
     }
-    .footer-img img{
+
+    .footer-img img {
         width: 180px;
     }
-    .email-custom{
+
+    .email-custom {
         width: 180px;
     }
 
     .latest-update {
         text-align: center;
     }
-    .view-btn{
+
+    .view-btn {
         width: 100% !important;
     }
 
@@ -1353,18 +1494,32 @@ background: #000;
         color: #0C1B42;
         border: none;
         padding: 7px 12px;
-        font-size: 10px;
+        font-size: 11px;
         width: 60%;
     }
-    .btn-tutorial{
+
+    .btn-tutorial {
         width: 30%;
         font-size: 10px
     }
-    .see-more-btn{
+
+    .see-more-btn {
         background: linear-gradient(to right, #5eaefd, #0585FF);
         border: none;
     }
-    .demo-video{
+
+    .demo-video {
         font-size: 10px;
+    }
+    /* about us */
+    .about-us-details h1 {
+        font-size: 48px;
+        font-weight: 800;
+        padding-top: 5px;
+    }
+    .about-us-details p {
+        font-size: 13px;
+        font-weight: 400;
+        padding-top: 5px;
     }
 }

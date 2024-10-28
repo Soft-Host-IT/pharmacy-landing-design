@@ -9,7 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-     <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/all.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -18,29 +18,35 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-navbar">
         <div class="container">
             <div class="bg-logo-img">
-                <a class="navbar-brand m-auto" href="index.html"><img class="logo" src="assets/img/Group.png" alt=""></a>
+                <a class="navbar-brand m-auto" href="index.html"><img class="logo" src="assets/img/Group.png"
+                        alt=""></a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span id="openIcon" class="navbar-toggler-icon"></span>
+                <span id="closeIcon" class="fa-solid fa-x d-none"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" href="our-product.html">Our Product</a>
+                        <a class="nav-link active text-color fw-bolder nav-item-effect" aria-current="page"
+                            href="our-product.html">Our Product</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" href="#">Price</a>
+                        <a class="nav-link active text-color fw-bolder nav-item-effect" aria-current="page"
+                            href="#">Price</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Demo Request</a>
+                        <a class="nav-link active text-color fw-bolder nav-item-effect" aria-current="page"
+                            type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Demo Request</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link active text-color" aria-current="page" href="about-us.html">About Us</a>
+                        <a class="nav-link active text-color fw-bolder nav-item-effect" aria-current="page"
+                            href="about-us.html">About Us</a>
                     </li>
                 </ul>
-                <div class="phone">
+                <div class="phone d-flex justify-content-center">
                     <div class="d-flex align-items-center">
                         <a href="" class="ms-2 text-dark"><strong>+880 1996-702373</strong></a>
                         <img class="whatsaap" src="assets/img/frame.png" alt="">
@@ -49,78 +55,94 @@
             </div>
         </div>
     </nav>
-       <!-- Demo Request Modal -->
-       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Demo Request Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-blue-color" id="exampleModalLabel">Request For Software Demo</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-blue-color" id="exampleModalLabel">Request For Software Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row px-2">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">Proprietor Name<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="Enter Proprietor Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">Name<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="Enter Your Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">Phone<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="+8801XXXXXXXXX">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">WhatsApp<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="+8801XXXXXXXXX">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">Email<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="Enter Your Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">Which software demo you
+                                        want?<span class="text-danger">*</span></label>
+                                    <select name="" id="" class="form-select">
+                                        <option selected disabled>Select a software</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-md-12">
+                                <div class="">
+                                    <label for="recipient-name" class="col-form-label">Address<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="recipient-name"
+                                        placeholder="Enter Your Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-1 px-2">
+                            <label for="message-text" class="col-form-label">Description/Note</label>
+                            <textarea class="form-control" id="message-text"
+                                placeholder="Do you want to say something?"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button"
+                        class="btn btn-primary rounded-pill shadow w-50 w-lg-auto mb-3 btn-request">Send
+                        Request</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <form>
-                <div class="row px-2">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">Proprietor Name<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Proprietor Name">
-                          </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">Name<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Name">
-                          </div>
-                    </div>
-                </div>
-                <div class="row px-2">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">Phone<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="+8801XXXXXXXXX">
-                          </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">WhatsApp<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="+8801XXXXXXXXX">
-                          </div>
-                    </div>
-                </div>
-                <div class="row px-2">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">Email<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Email">
-                          </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">Which software demo you want?<span class="text-danger">*</span></label>
-                            <select name="" id="" class="form-select">
-                                <option selected disabled>Select a software</option>
-                            </select>
-                          </div>
-                    </div>
-                </div>
-                <div class="row px-2">
-                    <div class="col-md-12">
-                        <div class="">
-                            <label for="recipient-name" class="col-form-label">Address<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Your Address">
-                          </div>
-                    </div>
-                </div>
-                <div class="mb-1 px-2">
-                  <label for="message-text" class="col-form-label">Description/Note</label>
-                  <textarea class="form-control" id="message-text" placeholder="Do you want to say something?"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-primary rounded-pill shadow w-50 w-lg-auto mb-3 btn-request">Send Request</button>
-            </div>
-          </div>
         </div>
     </div>
     <!-- Heading section -->
@@ -159,7 +181,7 @@
         </div>
     </section>
     <!-- Product section-2 -->
-     <section>
+    <section>
         <div class="container">
             <div class="product-2 d-flex justify-content-between flex-wrap">
                 <div class="product-details">
@@ -179,8 +201,8 @@
                 </div>
             </div>
         </div>
-     </section>
-     <!-- Product section-1 -->
+    </section>
+    <!-- Product section-1 -->
     <section>
         <div class="container">
             <div class="product d-flex justify-content-between flex-wrap">
@@ -203,7 +225,7 @@
         </div>
     </section>
     <!-- Product section-2 -->
-     <section>
+    <section>
         <div class="container">
             <div class="product-2 d-flex justify-content-between flex-wrap">
                 <div class="product-details">
@@ -223,8 +245,8 @@
                 </div>
             </div>
         </div>
-     </section>
-     <!-- Product section-1 -->
+    </section>
+    <!-- Product section-1 -->
     <section>
         <div class="container">
             <div class="product d-flex justify-content-between flex-wrap">
@@ -247,7 +269,7 @@
         </div>
     </section>
     <!-- Product section-2 -->
-     <section>
+    <section>
         <div class="container">
             <div class="product-2 d-flex justify-content-between flex-wrap">
                 <div class="product-details">
@@ -267,7 +289,7 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- footer section -->
     <section>
         <div class="footer">
@@ -311,7 +333,7 @@
                             </ul>
                         </div>
                         <div class="d-flex flex-column footer-img">
-                            <img class="mb-4" src="assets/img/softhostit.png" alt="">
+                            <img class="mb-4 footer-main" src="assets/img/Shit-logo.png" alt="">
                             <p class="latest-update">Get Latest Updates</p>
                             <input class="email-custom" type="email" placeholder="Your Email">
                         </div>
@@ -328,6 +350,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script> -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

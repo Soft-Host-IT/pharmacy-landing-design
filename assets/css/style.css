@@ -48,7 +48,14 @@ a {
 .phone {
     background: #fff;
     border-radius: 46px;
-    padding: 8px;
+    padding: 5px 8px;
+    transition: 0.3s ease;
+}
+.phone:hover{
+    background: #0C1B42;
+}
+.phone:hover a strong{
+    color:white;
 }
 
 .text-color {
@@ -66,6 +73,21 @@ a {
 
 .text-light-gray {
     color: rgba(0, 0, 0, 0.2);
+}
+.nav-item-effect:hover {
+    color: #0C1B42 !important;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .heading-size {
@@ -212,19 +234,41 @@ a {
 
 .see-more-btn {
     background-color: #5eaefd;
-    /* Solid color fallback */
     background-image: linear-gradient(to right, #5eaefd, #0585FF);
     border: none;
     transition: 0.5s ease;
 }
 
 .see-more-btn:hover {
-    background: #000;
+    background: #0C1B42;
     transform: translateY(-2px);
 }
 
 .btn-tutorial {
-    width: 40%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+.btn-tutorial img{
+    border: 1px solid #0C1B42;
+    border-radius: 50%;
+}
+
+.btn-tutorial:hover {
+    background: #0C1B42
+}
+.btn-tutorial:hover img{
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px white;
+}
+
+.btn-tutorial:hover span {
+    color: white;
 }
 
 .description {
@@ -261,8 +305,8 @@ a {
 }
 
 .btn-view:hover {
-    background: #000;
-    color: #fff;
+    background: #0585FF;
+    color: #0C1B42;
     transform: translateY(-2px);
 }
 
@@ -308,7 +352,7 @@ a {
 }
 
 .btn-pricing:hover {
-    background: #000;
+    background: #0C1B42;
     color: #fff;
     transform: translateY(-2px);
 }
@@ -371,7 +415,7 @@ a {
 }
 
 .circle-navy {
-    background: #0C1B42;
+    background: white;
     border-radius: 50%;
     height: 27px;
     width: 27px;
@@ -659,10 +703,15 @@ a {
 
 .email-custom:focus {
     outline: #007bff;
+    background: #0C1B42;
 }
 
 .mid {
     margin-left: 15%;
+}
+
+.footer-main {
+    width: 300px;
 }
 
 /* Our Product CSS */
@@ -788,33 +837,43 @@ a {
     transform: translateY(-2px);
     background: #0C1B42;
 }
-.company, .team{
+
+.company,
+.team {
     width: 80%;
     font-family: "Outfit", sens-serif;
 }
-.company h2, .team h2{
+
+.company h2,
+.team h2 {
     font-size: 32px;
     font-weight: 800;
 }
-.company p, .team p{
+
+.company p,
+.team p {
     font-size: 16px;
 }
-.go-home{
+
+.go-home {
     margin-bottom: 100px;
 }
-.go-btn{
+
+.go-btn {
     background: white;
-    color:#0585FF;
+    color: #0585FF;
     border: 1px solid #0585FF;
     border-radius: 25px;
     padding: 8px 20px;
     transition: 0.3s ease;
 }
-.go-btn:hover{
+
+.go-btn:hover {
     background: #0C1B42;
     color: white;
     transform: translateY(-2px);
 }
+
 @media (max-width: 991px) {
     .bg-hero-image {
         height: 350px;
@@ -974,6 +1033,10 @@ a {
         font-size: 14px;
     }
 
+    .footer-main {
+        width: 200px;
+    }
+
     /* our product */
     .product-image {
         width: 40%;
@@ -1040,6 +1103,70 @@ a {
 
 /* Phone devices (576px and larger) */
 @media (max-width: 767px) {
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 22px;
+        height: 3px;
+        margin-top: -2px;
+        background-color: #0585Ff;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        background-color: #0585FF;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+        top: 8px;
+    }
+
+    /* Open state */
+    .navbar-toggler.open .navbar-toggler-icon {
+        background-color: transparent;
+    }
+
+    .navbar-toggler.open .navbar-toggler-icon::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .navbar-toggler.open .navbar-toggler-icon::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #navbarSupportedContent .navbar-nav .nav-item {
+        opacity: 0;
+        animation: slideInFromLeft 0.4s ease forwards;
+    }
+
+    #navbarSupportedContent .navbar-nav .nav-item:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    #navbarSupportedContent .navbar-nav .nav-item:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    #navbarSupportedContent .navbar-nav .nav-item:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    #navbarSupportedContent .navbar-nav .nav-item:nth-child(4) {
+        animation-delay: 0.5s;
+    }
+
     .heading-size {
         font-size: 42px;
     }
@@ -1346,12 +1473,15 @@ a {
         font-weight: 800;
         padding-top: 5px;
     }
+
     .about-us-details p {
         font-size: 14px;
         font-weight: 400;
         padding-top: 5px;
     }
-    .company, .team{
+
+    .company,
+    .team {
         background: #ddeeff;
         padding: 20px;
         width: 100%;
@@ -1499,7 +1629,7 @@ a {
     }
 
     .btn-tutorial {
-        width: 30%;
+        width: 40%;
         font-size: 10px
     }
 
@@ -1511,12 +1641,14 @@ a {
     .demo-video {
         font-size: 10px;
     }
+
     /* about us */
     .about-us-details h1 {
         font-size: 48px;
         font-weight: 800;
         padding-top: 5px;
     }
+
     .about-us-details p {
         font-size: 13px;
         font-weight: 400;

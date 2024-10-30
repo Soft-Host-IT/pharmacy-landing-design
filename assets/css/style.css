@@ -2,14 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body {
-    background: #f3f8ff;
+    position: relative;
     min-height: 100vh;
     margin: 0;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/pattern.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.08;
+    z-index: -1; 
 }
 
 .bg-navbar {
     background-color: rgba(255, 255, 255, 0.5) !important;
     backdrop-filter: blur(4px) !important;
+    font-family: "Inter", Sens-serif;
 }
 
 .bg-logo-img {
@@ -47,8 +62,7 @@ a {
 
 .phone {
     background: #fff;
-    border-radius: 46px;
-    padding: 5px 8px;
+    border-radius: 50px;
     transition: 0.3s ease;
 }
 .phone:hover{
@@ -97,25 +111,8 @@ a {
     line-height: 50px;
 }
 
-.bg-hero-image {
-    background-image: url(../img/Ellipse.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 535px;
-    top: 0;
-    left: 0;
-    gap: 0;
-    opacity: 1;
-    position: relative;
-}
-
 .pharmacy_cartoon {
-    width: 74%;
-    position: absolute;
-    top: 0%;
-    left: 10%;
+    width: 100%;
 }
 
 .hero-para {
@@ -132,42 +129,6 @@ a {
     position: relative;
 }
 
-.img-float-1 {
-    position: absolute;
-    width: 151px;
-    height: 203px;
-    top: 0%;
-    left: 55%;
-    gap: 0px;
-    opacity: 1;
-    transition: all 0.3s ease;
-
-}
-
-.img-float-2 {
-    position: absolute;
-    width: 145px;
-    height: 145px;
-    top: 38%;
-    left: 88%;
-    gap: 0px;
-    opacity: 1;
-    transition: all 0.3s ease;
-
-}
-
-.img-float-3 {
-    position: absolute;
-    width: 144px;
-    height: 144px;
-    top: 73%;
-    left: 80%;
-    gap: 0px;
-    opacity: 1;
-    transition: all 0.3s ease;
-
-}
-
 .img-float-4 {
     position: absolute;
     width: 88px;
@@ -181,24 +142,6 @@ a {
     top: 0px;
     width: 90px;
     height: 78px;
-    transition: all 0.3s ease;
-}
-
-.img-float-6 {
-    position: absolute;
-    top: 85%;
-    left: 55%;
-    width: 94px;
-    height: 94px;
-    transition: all 0.3s ease;
-}
-
-.img-float-7 {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 114px;
-    height: 114px;
     transition: all 0.3s ease;
 }
 
@@ -259,16 +202,17 @@ a {
 }
 
 .btn-tutorial:hover {
-    background: #0C1B42
+    background: transparent;
+    border: 1px solid #0C1B42;
 }
 .btn-tutorial:hover img{
-    border: 1px solid white;
+    border: 1px solid #0C1B42;
     border-radius: 50%;
-    box-shadow: 1px 1px 8px white;
+    box-shadow: 1px 1px 8px #0C1B42;
 }
 
 .btn-tutorial:hover span {
-    color: white;
+    color: #0C1B42;
 }
 
 .description {
@@ -875,37 +819,10 @@ a {
 }
 
 @media (max-width: 991px) {
-    .bg-hero-image {
-        height: 350px;
-        background-size: contain;
-    }
 
     .pharmacy_cartoon {
-        max-width: 310px;
-        left: 10%;
-        top: 9%;
-    }
+       width: 100%;
 
-    .img-float-1 {
-        width: 100px;
-        height: 140px;
-        top: 16%;
-        left: 60%;
-        transform: translateX(-50%);
-    }
-
-    .img-float-2 {
-        width: 90px;
-        height: 70px;
-        top: 45%;
-        left: 85%
-    }
-
-    .img-float-3 {
-        width: 80px;
-        height: 80px;
-        top: 63%;
-        left: 75%;
     }
 
     .img-float-4 {
@@ -918,21 +835,6 @@ a {
         width: 50px;
         height: 50px;
         top: -4%;
-    }
-
-    .img-float-6 {
-        width: 75px;
-        height: 75px;
-        top: 75%;
-        left: 60%;
-        transform: translateX(-50%);
-    }
-
-    .img-float-7 {
-        width: 90px;
-        height: 90px;
-        top: 8%;
-        right: 5%;
     }
 
     .hero-section {
@@ -1171,65 +1073,20 @@ a {
         font-size: 42px;
     }
 
-    .bg-hero-image {
-        height: 250px;
-        background-size: contain;
-    }
-
     .pharmacy_cartoon {
-        max-width: 192px;
-        left: 47%;
-        transform: translateX(-50%);
-        top: 4%;
-    }
-
-    .img-float-1 {
-        width: 65px;
-        height: 70px;
-        top: 65%;
-        left: 35%;
-        transform: translateX(-50%);
-    }
-
-    .img-float-2 {
-        width: 70px;
-        height: 50px;
-        top: 77%;
-        left: 60%;
-    }
-
-    .img-float-3 {
-        width: 70px;
-        height: 70px;
-        top: 86%;
-        left: 52%;
+       width: 100%;
     }
 
     .img-float-4 {
-        width: 40px;
-        height: 40px;
+        width: 75px;
+        height: 50px;
         top: 95%;
     }
 
     .img-float-5 {
-        width: 40px;
-        height: 40px;
+        width: 75px;
+        height: 50px;
         top: -2%;
-    }
-
-    .img-float-6 {
-        width: 60px;
-        height: 60px;
-        top: 78%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .img-float-7 {
-        width: 70px;
-        height: 70px;
-        top: 55%;
-        right: 25%;
     }
 
     .hero-section {
@@ -1495,39 +1352,8 @@ a {
         font-size: 40px;
     }
 
-    .bg-hero-image {
-        height: 270px;
-        background-size: contain;
-    }
-
     .pharmacy_cartoon {
-        max-width: 191px;
-        left: 48%;
-        transform: translateX(-50%);
-        top: 11%;
-    }
-
-    .img-float-1 {
-        width: 50px;
-        height: 50px;
-        top: 73%;
-        left: 28%;
-        transform: translateX(-50%);
-    }
-
-    .img-float-2 {
-        width: 50px;
-        height: 55px;
-        top: 80%;
-        left: 63%;
-    }
-
-    .img-float-3 {
-        width: 50px;
-        height: 50px;
-        top: 90%;
-        left: 62%;
-        transform: translateX(-50%);
+        width:100%;
     }
 
     .img-float-4 {
@@ -1540,21 +1366,6 @@ a {
         width: 40px;
         height: 40px;
         top: -2%;
-    }
-
-    .img-float-6 {
-        width: 55px;
-        height: 55px;
-        top: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .img-float-7 {
-        width: 50px;
-        height: 50px;
-        top: 67%;
-        right: 20%;
     }
 
     .modal-dialog {

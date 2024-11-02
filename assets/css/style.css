@@ -51,7 +51,7 @@ body::before {
 .whatsaap {
     width: 65px;
     height: 65px;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
     border-radius: 50% !important;
 }
 .whatsaap-img{
@@ -752,7 +752,7 @@ a {
 }
 
 .about-us-content {
-    width: 45%;
+    width: 48%;
     padding: 20px 25px;
 }
 
@@ -763,6 +763,7 @@ a {
 }
 
 .about-us-details p {
+
     font-size: 16px;
     font-weight: 400;
     padding-top: 5px;
@@ -798,7 +799,7 @@ a {
 
 .company,
 .team {
-    width: 80%;
+    width: 69%;
     font-family: "Outfit", sens-serif;
 }
 

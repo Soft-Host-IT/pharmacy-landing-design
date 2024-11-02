@@ -51,11 +51,11 @@ body::before {
 .whatsaap {
     width: 65px;
     height: 65px;
-    margin-bottom: -11px;
+    margin-bottom: -3px;
     border-radius: 50% !important;
 }
 .whatsaap-img{
-    width: 100%;
+    width: 113%;
 }
 
 .logo {

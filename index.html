@@ -9,7 +9,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -46,10 +48,10 @@
                             href="about-us.html">About Us</a>
                     </li>
                 </ul>
-                <div class="phone d-flex justify-content-center">
-                    <div class="d-flex align-items-center">
-                        <a href="" class="ms-2 text-dark"><strong>+880 1996-702373</strong></a>
-                        <img class="whatsaap" src="assets/img/frame.png" alt="">
+                <div class="phone d-flex justify-content-center align-items-center">
+                    <a href="" class="ms-2 text-dark phone-number"><strong>+880 1996-702373</strong></a>
+                    <div class="whatsaap">
+                        <img class="whatsaap-img" src="assets/img/wapp2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -69,15 +71,15 @@
                         <div class="row px-2">
                             <div class="col-md-6 col-sm-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">Proprietor Name<span
-                                            class="text-danger">*</span></label>
+                                    <label for="recipient-name" class="col-form-label text-blue-color">Proprietor
+                                        Name<span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="recipient-name"
                                         placeholder="Enter Proprietor Name">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">Name<span
+                                    <label for="recipient-name" class="col-form-label text-blue-color">Name<span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="recipient-name"
                                         placeholder="Enter Your Name">
@@ -87,7 +89,7 @@
                         <div class="row px-2">
                             <div class="col-md-6 col-sm-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">Phone<span
+                                    <label for="recipient-name" class="col-form-label text-blue-color">Phone<span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="recipient-name"
                                         placeholder="+8801XXXXXXXXX">
@@ -95,7 +97,7 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">WhatsApp<span
+                                    <label for="recipient-name" class="col-form-label text-blue-color">WhatsApp<span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="recipient-name"
                                         placeholder="+8801XXXXXXXXX">
@@ -105,7 +107,7 @@
                         <div class="row px-2">
                             <div class="col-md-6 col-sm-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">Email<span
+                                    <label for="recipient-name" class="col-form-label text-blue-color">Email<span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="recipient-name"
                                         placeholder="Enter Your Email">
@@ -113,10 +115,12 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">Which software demo you
+                                    <label for="recipient-name" class="col-form-label text-blue-color">Which software
+                                        demo you
                                         want?<span class="text-danger">*</span></label>
                                     <select name="" id="" class="form-select">
                                         <option selected disabled>Select a software</option>
+                                        <option>Pharmacy</option>
                                     </select>
                                 </div>
                             </div>
@@ -124,7 +128,7 @@
                         <div class="row px-2">
                             <div class="col-md-12">
                                 <div class="">
-                                    <label for="recipient-name" class="col-form-label">Address<span
+                                    <label for="recipient-name" class="col-form-label text-blue-color">Address<span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="recipient-name"
                                         placeholder="Enter Your Address">
@@ -132,7 +136,7 @@
                             </div>
                         </div>
                         <div class="mb-1 px-2">
-                            <label for="message-text" class="col-form-label">Description/Note</label>
+                            <label for="message-text" class="col-form-label text-blue-color">Description/Note</label>
                             <textarea class="form-control" id="message-text"
                                 placeholder="Do you want to say something?"></textarea>
                         </div>
@@ -160,8 +164,9 @@
                                     class="text-blue-color heading-size"> Pharmacy</span></h1>
                             <h1><span class="text-blue-color heading-size">Shop!</span></h1>
                         </div>
-                        <p class="hero-para">Dengan BalonKUN kamu bisa merasakan pengalaman baru dengan menaiki
-                            balon udara dengan pemandangan sekitar yang sangat indah untuk memanjakan mata anda.</p>
+                        <p class="hero-para">Discover the best software for your pharmacy, enhancing efficiency,
+                            streamlining inventory management, improving customer service, and ensuring compliance with
+                            regulations for optimal operations.</p>
                     </div>
                     <div class="view-btn d-flex justify-content-between align-items-center w-75">
                         <a class="btn rounded-pill btn-dark custom-btn py-2" href="#"> <strong> View Demo
@@ -174,15 +179,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="bg-hero-image">
-                        <img class="pharmacy_cartoon img-fluid" src="assets/img/pharmacy_cartoon.png" alt="">
+                        <img class="pharmacy_cartoon img-fluid" src="assets/img/character.png" alt="">
                     </div>
                 </div>
-                <img src="assets/img/hand2.png" alt="" class="img-float-1"><img src="assets/img/img4.png" alt=""
-                    class="img-float-2"><img src="assets/img/capsule.png" alt="" class="img-float-3">
                 <img src="assets/img/blur_pill.png" alt="" class="img-float-4">
                 <img src="assets/img/blur_pill.png" alt="" class="img-float-5">
-                <img src="assets/img/img5.png" alt="" class="img-float-6">
-                <img src="assets/img/img6.png" alt="" class="img-float-7">
             </div>
         </div>
     </section>
@@ -196,8 +197,8 @@
                             Pharmacy Management Software</p>
                     </div>
                     <div class="right-content">
-                        <p>Grow your brand with high-quality design for a flat monthly fee. Work with senior designers.
-                            Subscribe and make as many requests as you need - no limits.</p>
+                        <p>Grow your brand with high-quality Software for a flat monthly fee. Work with Soft Host IT.
+                            Subscribe and make as many requests as you need.</p>
                         <button class="btn btn-view">View in Demo</button>
                     </div>
                 </div>
@@ -213,8 +214,8 @@
                     <p>Get a dedicated Software team at the fraction of the cost.</p>
                 </div>
                 <div class="right-work">
-                    <p>Grow your brand with high-quality design for a flat monthly fee. Work with senior designers.
-                        Subscribe and make as many requests as you need - no limits.</p>
+                    <p>Access a dedicated software team at a fraction of the cost, providing expert development,
+                        tailored solutions, and ongoing support without the overhead of full-time employees.</p>
                     <button class="btn btn-pricing">See Pricing</button>
                 </div>
             </div>
@@ -229,16 +230,15 @@
                 <div class="pharmacy-content d-flex align-items-center flex-wrap">
                     <div class="left-pharmacy-content">
                         <h2>ফার্মেসির রেকর্ড রাখার সহজ উপায়</h2>
-                        <p>Pharmacy management Software হল অ্যাকাউন্টিং, উৎপাদন, স্টক, সেলস এবং ইত্যাদি সহ একটি ইট ভাটার
-                            প্রতিটি দিল পরিচালনা করার জন্য একমাত্র এবং একমাত্র সেরা সফটওয়্যার। আমরা এই সফটওয়্যারটি গর ৯
-                            বছর ধরে কাজ করছি এবং এটি তৈরি কোনো কসরত রাখছি না। আপনার কম্পিউটারে একটি অমূল্য জিনিস। এই
-                            সফটওয়্যারটি অভিজ্ঞ ইট ভাটা মালিক এবং হিসাবরক্ষকদের নির্দেশনায় তৈরি করা হয়েছে। একটি ইট ভাটা
-                            মালিক আশা করতে পারেন যে কোনো রিপোর্ট; সেকেন্ডের মধ্যে তৈরি হয়। দীর্ঘ গল্পটি হলো এই
-                            সফটওয়্যারটি ইট ভাটা মালিকদের দ্বারা ইট ভাটা মালিকদের জন্য তৈরি করা হয়েছিল। একজন ইট ভাটা
-                            মালিকের প্রতিটি সমস্যার সমাধান এই সফটওয়্যারে এম্বেড করা আছে যা অন্য কোনো সফটওয়্যারে সহযে
-                            পাওয়া যাবে না৷ যদি একটি ইট ভাটা এই সফটওয়্যারটিতে প্রতিদিন ৩০মিনিট (নিজে বা তার হিসাবরক্ষক)
-                            ব্যয় করে হবে সে কয়েক সেকেন্ডের মধ্যে এই সফটওয়্যার থেকে প্রতি মিনিটের তথ্য (যা একজন মালিক তার
-                            কর্মচারীর কাছ থেকে পায়) পেতে পারে।</p>
+                        <p>ফার্মেসি ইআরপি (Paharmacy management Software) সফটওয়্যার হল একটি সম্পূর্ণ সমাধান যা
+                            ফার্মেসির কার্যক্রমকে সুসংগঠিত করে। আমরা এই সফ্টওয়্যারটি গত 09 বছর ধরে কাজ করছি এবং এটি
+                            তৈরি করতে কোনও কসরত রাখছি না৷এটি ইনভেন্টরি ম্যানেজমেন্ট, প্রেসক্রিপশন প্রক্রিয়াকরণ, বিলিং
+                            এবং গ্রাহক সম্পর্ক ব্যবস্থাপনা সহ মূল কার্যক্রমগুলিকে একটি প্ল্যাটফর্মে একত্রিত করে। এই
+                            সফটওয়্যার কার্যক্রমের দক্ষতা বাড়ায়, স্বয়ংক্রিয় কাজের মাধ্যমে ভুল কমায় এবং রিয়েল-টাইম
+                            ডেটা অ্যানালিটিক্স প্রদান করে। নিয়ম মেনে চলা এবং আর্থিক রিপোর্টিংয়ের মতো বৈশিষ্ট্যগুলির
+                            সঙ্গে, ফার্মেসি ইআরপি সফটওয়্যার কাজের প্রবাহকে অপ্টিমাইজ করতে, রোগীর যত্ন উন্নত করতে এবং
+                            ব্যবসার বৃদ্ধি ত্বরান্বিত করতে সহায়তা করে, যা আধুনিক ফার্মেসির জন্য একটি অপরিহার্য সরঞ্জাম।
+                        </p>
                         <div class="view-btn d-flex justify-content-start  align-items-center w-75">
                             <a class="btn rounded-pill mt-3 d-flex align-items-center see-more-btn py-2"> <strong
                                     class="text-white">See Live Demo</strong>
@@ -294,13 +294,14 @@
             <div class="container">
                 <div class="benefit-content d-flex align-items-center flex-wrap">
                     <div class="left-benefit-content">
-                        <img class="w-100" src="assets/img/demo-main.png" alt="">
+                        <img class="w-100" src="assets/img/demo1.png" alt="">
                     </div>
                     <div class="right-benefit-content d-flex justify-content-end">
                         <div class="benefits-details">
                             <h2>ফার্মেসির সফটওয়্যারে যা যা থাকছে।</h2>
-                            <p>ড্যাশবোর্ড, ব্যাক্তির হিসাব, সরদারের হিসাব, ইট হিসাব, ট্রাক ডাইভারের হিসাব, একাউন্ট
-                                লোন/ইনভেস্ট হিসাব, ক্রয় হিসাব, এস এম এস, স্টাফ, বাকি রিপোর্ট, বিক্রয় রিপোর্ট, জমা হিসাব
+                            <p>ড্যাশবোর্ড, ব্যাক্তির হিসাব, সরদারের হিসাব, <br> ইট হিসাব, ট্রাক ডাইভারের হিসাব, একাউন্ট
+                                লোন/ইনভেস্ট হিসাব, ক্রয় হিসাব, <br> এস এম এস, স্টাফ, বাকি রিপোর্ট, বিক্রয় রিপোর্ট, <br>
+                                জমা হিসাব
                                 রিপোর্ট, খরচ হিসাব রিপোর্ট, সেটিংস।</p>
                             <div class="view-btn d-flex justify-content-end  align-items-center w-100 flex-wrap">
                                 <a class="btn rounded-pill btn-dark mt-3 d-flex align-items-center see-more-btn">
@@ -323,10 +324,11 @@
                 <div class="benefit-rev-content d-flex align-items-center flex-wrap">
                     <div class="left-rev-benefit-content">
                         <div class="benefit-rev-details">
-                            <h2>ফার্মেসির সফটওয়্যারে যা যা থাকছে।</h2>
-                            <p>ড্যাশবোর্ড, ব্যাক্তির হিসাব, সরদারের হিসাব, ইট হিসাব, ট্রাক ডাইভারের হিসাব, একাউন্ট
-                                লোন/ইনভেস্ট হিসাব, ক্রয় হিসাব, এস এম এস, স্টাফ, বাকি রিপোর্ট, বিক্রয় রিপোর্ট, জমা হিসাব
-                                রিপোর্ট, খরচ হিসাব রিপোর্ট, সেটিংস।</p>
+                            <h2>ফার্মেসি সফটওয়্যারে মেডিসিন নিয়ে যা যা থাকছে।</h2>
+                            <p>ড্যাশবোর্ড, মেডিসিন এর হিসাব, <br>
+                                মেডিসিন এর হিসাব, ক্রয় হিসাব, <br>
+                                এসএমএস, রিপোর্ট, বিক্রয়, রিপোর্ট, <br>
+                                জমা হিসাব, রিপোর্ট, খরচ হিসাব, রিপোর্ট,সেটিংস।</p>
                             <div class="view-btn d-flex justify-content-end  align-items-center w-100 flex-wrap">
                                 <a class="btn rounded-pill btn-dark mt-3 d-flex align-items-center see-more-btn">
                                     <div class="circle me-1"><img src="assets/img/left-arrow.png" alt=""> </div><strong
@@ -336,7 +338,7 @@
                         </div>
                     </div>
                     <div class="right-rev-benefit-content d-flex justify-content-end">
-                        <img class="w-100" src="assets/img/demo-main2.png" alt="">
+                        <img class="w-100" src="assets/img/demo2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -350,14 +352,15 @@
             <div class="container">
                 <div class="benefit-content d-flex align-items-center flex-wrap">
                     <div class="left-benefit-content">
-                        <img class="w-100" src="assets/img/demo-main.png" alt="">
+                        <img class="w-100" src="assets/img/demo1.png" alt="">
                     </div>
                     <div class="right-benefit-content d-flex justify-content-end">
                         <div class="benefits-details">
-                            <h2>ফার্মেসির সফটওয়্যারে যা যা থাকছে।</h2>
-                            <p>ড্যাশবোর্ড, ব্যাক্তির হিসাব, সরদারের হিসাব, ইট হিসাব, ট্রাক ডাইভারের হিসাব, একাউন্ট
-                                লোন/ইনভেস্ট হিসাব, ক্রয় হিসাব, এস এম এস, স্টাফ, বাকি রিপোর্ট, বিক্রয় রিপোর্ট, জমা হিসাব
-                                রিপোর্ট, খরচ হিসাব রিপোর্ট, সেটিংস।</p>
+                            <h2>ফার্মেসির সফ্টওয়ারে CRM থাকছে।</h2>
+                            <p>ক্লাইন্ ও সাপ্লাইয়ার <br>
+                                ক্লাইন্ এর লিস্ট, গ্রুপ রিপোর্ট, <br>
+                                সাপ্লাইয়ারের
+                                লিস্ট, গ্রুপ রিপোর্ট।</p>
                             <div class="view-btn d-flex justify-content-end  align-items-center w-100 flex-wrap">
                                 <a class="btn rounded-pill btn-dark mt-3 d-flex align-items-center see-more-btn">
                                     <div class="circle me-1"><img src="assets/img/left-arrow.png" alt=""> </div><strong
@@ -381,28 +384,27 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button text-blue-color" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button text-blue-color faq-bg-color" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
                                     Can I Choose My Meal?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body faq-bg-color">
+                                    <p class="faq-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                        quasi nostrum, est dolorum voluptate libero non fugiat quibusdam inventore
+                                        doloremque exercitationem, nesciunt molestiae distinctio quisquam, dicta modi
+                                        nisi? A minima odit quos commodi voluptate dolore praesentium at rerum nulla
+                                        cupiditate autem repellendus id quibusdam aliquam, optio atque omnis maiores
+                                        reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed text-blue-color" type="button"
+                                <button class="accordion-button collapsed text-blue-color faq-bg-color" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
                                     When will I receive my order?
@@ -410,20 +412,19 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding
-                                    via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body faq-bg-color">
+                                    <p class="faq-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                        quasi nostrum, est dolorum voluptate libero non fugiat quibusdam inventore
+                                        doloremque exercitationem, nesciunt molestiae distinctio quisquam, dicta modi
+                                        nisi? A minima odit quos commodi voluptate dolore praesentium at rerum nulla
+                                        cupiditate autem repellendus id quibusdam aliquam, optio atque omnis maiores
+                                        reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed text-blue-color" type="button"
+                                <button class="accordion-button collapsed text-blue-color faq-bg-color" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
                                     Can I skip delivery?
@@ -431,21 +432,19 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body faq-bg-color">
+                                    <p class="faq-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                        quasi nostrum, est dolorum voluptate libero non fugiat quibusdam inventore
+                                        doloremque exercitationem, nesciunt molestiae distinctio quisquam, dicta modi
+                                        nisi? A minima odit quos commodi voluptate dolore praesentium at rerum nulla
+                                        cupiditate autem repellendus id quibusdam aliquam, optio atque omnis maiores
+                                        reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed text-blue-color" type="button"
+                                <button class="accordion-button collapsed text-blue-color faq-bg-color" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
                                     Can I add Extras to my delivery?
@@ -453,15 +452,13 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the Fourth item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="accordion-body faq-bg-color">
+                                    <p class="faq-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                                        quasi nostrum, est dolorum voluptate libero non fugiat quibusdam inventore
+                                        doloremque exercitationem, nesciunt molestiae distinctio quisquam, dicta modi
+                                        nisi? A minima odit quos commodi voluptate dolore praesentium at rerum nulla
+                                        cupiditate autem repellendus id quibusdam aliquam, optio atque omnis maiores
+                                        reiciendis.</p>
                                 </div>
                             </div>
                         </div>

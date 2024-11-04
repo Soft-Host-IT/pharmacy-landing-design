@@ -1,0 +1,129 @@
+.animated-section-container {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Shape */
+.background-shape {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Doctor Shape */
+.doctor-shape {
+    position: absolute;
+    width: 75%;
+    z-index: 2;
+    top: 5.8%;
+    right: 13%;
+    border-radius: 100%;
+    animation: float 5s ease-in-out infinite;
+    filter: drop-shadow(0px 0px 30px white);
+}
+
+/* Floating Shapes */
+.tablet-1-shape,
+.tablet-2-shape,
+.mobile-hand-shape,
+.pharmacy-shape,
+.heartbeat-mobile-shape {
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Individual Positions */
+.tablet-1-shape {
+    bottom: 55px;
+    right: 150px;
+    animation-delay: 0.5s;
+}
+
+.tablet-2-shape {
+    top: 10%;
+    right: 15%;
+    animation-delay: 0.3s;
+}
+
+.mobile-hand-shape {
+    top: 20%;
+    left: 15%;
+    animation-delay: 1.5s;
+}
+
+.pharmacy-shape {
+    top: 45%;
+    right: 5%;
+    animation-delay: 0.7s;
+}
+
+.heartbeat-mobile-shape {
+    bottom: 15%;
+    left: 15%;
+    animation-delay: 0.2s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .animated-section-container {
+        height: 400px;
+    }
+
+    .doctor-shape {
+        width: 60%;
+        top: 10%;
+        right: 22%;
+    }
+
+    .tablet-1-shape,
+    .tablet-2-shape,
+    .mobile-hand-shape,
+    .pharmacy-shape,
+    .heartbeat-mobile-shape {
+        width: 15%;
+    }
+
+    .tablet-1-shape {
+        bottom: 60px;
+        right: 100px;
+    }
+
+    .tablet-2-shape {
+        top: 15%;
+        right: 25%;
+    }
+
+    .mobile-hand-shape {
+        top: 25%;
+        left: 20%;
+    }
+
+    .pharmacy-shape {
+        top: 40%;
+        right: 15%;
+    }
+
+    .heartbeat-mobile-shape {
+        bottom: 20%;
+        left: 20%;
+    }
+}
